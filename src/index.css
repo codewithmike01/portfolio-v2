@@ -1,3 +1,10 @@
+:root {
+  --primary-text: #1f1f1f;
+  --secondary-text: #ffffff;
+  --primary-bg: #174aff;
+  --secondary-bg: #000000;
+}
+
 html {
   padding: 0;
   margin: 0;
@@ -10,4 +17,14 @@ html {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31px;
 }
