@@ -5,11 +5,12 @@ interface BgButtonINterface {
   text: string;
   width?: string;
   icon?: React.ReactElement;
+  func?: Function;
 }
 
-const BgButton: React.FC<BgButtonINterface> = ({ text, width, icon }) => {
+const BgButton: React.FC<BgButtonINterface> = ({ text, width, icon, func }) => {
   return (
-    <BgButtonContainer width={width}>
+    <BgButtonContainer width={width} onClick={() => (func ? func() : {})}>
       <p>{text}</p>
       {icon}
     </BgButtonContainer>

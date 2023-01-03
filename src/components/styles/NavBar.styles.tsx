@@ -5,6 +5,7 @@ interface NavBarInterface {
 
 export const NavBarContainer = styled.section<NavBarInterface>`
   position: relative;
+  background-color: #fff;
   .navbar_wrapper {
     position: inherit;
     width: 90%;
@@ -63,7 +64,7 @@ export const NavBarContainer = styled.section<NavBarInterface>`
     }
   }
 
-  @media screen and (max-width: 745px) {
+  @media screen and (max-width: 775px) {
     .navbar_wrapper {
       .mobile-menu {
         display: flex;
@@ -90,8 +91,11 @@ export const NavBarContainer = styled.section<NavBarInterface>`
     }
 
     .blur_background {
-      position: absolute;
+      position: fixed;
       top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
       height: 100vh;
       width: 100%;
       z-index: 2;

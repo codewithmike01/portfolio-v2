@@ -18,7 +18,7 @@ const Hero = () => {
 
       <BgButton
         text="See My Projects"
-        width="13.4375rem"
+        width="15.4375rem"
         icon={<FiArrowUpRight />}
       />
     </HeroContainer>
