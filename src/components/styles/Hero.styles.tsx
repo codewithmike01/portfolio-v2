@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
 export const HeroContainer = styled.section`
-  align-self: center;
   width: 90%;
   max-width: 1440px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
   .hero_wrapper {
     text-align: center;
     display: flex;
@@ -16,5 +19,9 @@ export const HeroContainer = styled.section`
       line-height: 1.5rem;
       word-spacing: 1px;
     }
+  }
+
+  button {
+    align-self: center;
   }
 `;

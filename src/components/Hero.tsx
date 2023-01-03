@@ -1,4 +1,6 @@
 import React from 'react';
+import BgButton from './BgButton';
+import { FiArrowUpRight } from 'react-icons/fi';
 import { HeroContainer } from './styles/Hero.styles';
 
 const Hero = () => {
@@ -13,6 +15,12 @@ const Hero = () => {
           , patterns and principles.
         </p>
       </div>
+
+      <BgButton
+        text="See My Projects"
+        width="13.4375rem"
+        icon={<FiArrowUpRight />}
+      />
     </HeroContainer>
   );
 };

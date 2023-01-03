@@ -1,7 +1,8 @@
 import React from 'react';
+import { QuoteContainer } from './styles/Quote.styles';
 
 const QuoteCard = () => {
-  return <div>QuoteCard</div>;
+  return <QuoteContainer>QuoteCard</QuoteContainer>;
 };
 
 export default QuoteCard;
