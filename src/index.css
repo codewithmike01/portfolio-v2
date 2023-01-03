@@ -28,3 +28,7 @@ h5 {
   font-weight: 700;
   line-height: 31px;
 }
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
