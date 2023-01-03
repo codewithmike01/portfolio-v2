@@ -24,12 +24,20 @@ const NavBar: React.FC = () => {
           </div>
 
           <div className="social_container">
-            <a href="/github" target="_blank">
+            <a
+              href="https://github.com/Ginohmk"
+              target="_blank"
+              rel="noreferrer"
+            >
               {' '}
               <AiFillGithub />{' '}
             </a>
 
-            <a href="/github" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/mike-kanu-dev/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <AiFillLinkedin />
             </a>
           </div>

@@ -95,7 +95,7 @@ export const NavBarContainer = styled.section<NavBarInterface>`
       height: 100vh;
       width: 100%;
       z-index: 2;
-      background-color: rgba(0, 0, 0, 0.05);
+      background-color: #ffffff;
     }
   }
 `;
