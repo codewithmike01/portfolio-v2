@@ -1,7 +1,12 @@
 import styled from 'styled-components';
+interface NavBarInterface {
+  isMobileMenu: boolean;
+}
 
-export const NavBarContainer = styled.section`
+export const NavBarContainer = styled.section<NavBarInterface>`
+  position: relative;
   .navbar_wrapper {
+    position: inherit;
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
@@ -15,6 +20,7 @@ export const NavBarContainer = styled.section`
       display: flex;
       align-items: center;
       gap: 8px;
+      z-index: 4;
 
       h3 {
         font-size: 1.5rem;
@@ -47,6 +53,49 @@ export const NavBarContainer = styled.section`
         text-decoration: none;
         color: #000000;
       }
+    }
+
+    .mobile-menu {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+      z-index: 4;
+    }
+  }
+
+  @media screen and (max-width: 745px) {
+    .navbar_wrapper {
+      .mobile-menu {
+        display: flex;
+        align-self: flex-start;
+      }
+      .nav_links_container {
+        display: ${({ isMobileMenu }) => (isMobileMenu ? 'flex' : 'none')};
+        position: absolute;
+        top: 8rem;
+        z-index: 3;
+        flex-direction: column;
+        width: 100%;
+
+        .nav_links,
+        .social_container {
+          align-self: flex-start;
+          flex-direction: column;
+        }
+
+        .social_container {
+          flex-direction: row;
+        }
+      }
+    }
+
+    .blur_background {
+      position: absolute;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.05);
     }
   }
 `;

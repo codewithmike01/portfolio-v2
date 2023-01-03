@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { BiMenuAltRight } from 'react-icons/bi';
+import { MdOutlineClose } from 'react-icons/md';
 import { NavBarContainer } from './styles/NavBar.styles';
 import Logo from '../assets/images/logo.svg';
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
+  const [isMobileMenu, setIsMobileMenu] = useState(false);
   return (
-    <NavBarContainer>
+    <NavBarContainer isMobileMenu={isMobileMenu}>
       <div className="navbar_wrapper">
         <div className="logo_wrapper">
           <img src={Logo} alt="Logo" /> <h3>KMC</h3>
@@ -31,7 +34,22 @@ const NavBar = () => {
             </a>
           </div>
         </div>
+
+        {/* Mobile Menu  */}
+        {isMobileMenu ? (
+          <MdOutlineClose
+            className="mobile-menu"
+            onClick={() => setIsMobileMenu(false)}
+          />
+        ) : (
+          <BiMenuAltRight
+            className="mobile-menu"
+            onClick={() => setIsMobileMenu(true)}
+          />
+        )}
       </div>
+      {/* Background Blur */}
+      {isMobileMenu && <div className="blur_background"></div>}
     </NavBarContainer>
   );
 };
