@@ -29,10 +29,35 @@ export const HomePageContainer = styled.section`
   }
 
   .skills_section {
-    margin-top: -130px;
-    background-color: var(--primary-bg);
-    width: 100%;
-    padding: 31px 0;
-    color: #fff;
+    .skills_section_header {
+      margin-top: -130px;
+      background-color: var(--primary-bg);
+      height: 100px;
+      width: 100%;
+      padding: 31px 0 25px 0;
+      color: #fff;
+    }
+
+    .grid_skills_container {
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      width: 90%;
+      margin: 0 auto;
+      margin-top: -57px;
+      padding: 30px 20px;
+      color: var(--primary-text);
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      .grid_skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+        grid-row-gap: 2rem;
+        grid-column-gap: 2rem;
+      }
+    }
   }
 `;
