@@ -6,12 +6,23 @@ interface NavBarInterface {
 export const NavBarContainer = styled.section<NavBarInterface>`
   position: relative;
   background-color: #fff;
+
+  position: fixed;
+  height: 75px;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 5;
+  background-color: #fff;
+
   .navbar_wrapper {
+    background-color: #fff;
     position: inherit;
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
-    padding-top: 2.3125rem;
+    padding-top: 1.3125rem;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
