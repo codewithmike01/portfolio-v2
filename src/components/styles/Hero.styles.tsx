@@ -7,12 +7,14 @@ export const HeroContainer = styled.section`
   display: flex;
   flex-direction: column;
   gap: 48px;
+  margin-top: 8rem;
 
   .hero_wrapper {
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+
     p {
       align-self: center;
       max-width: 467px;

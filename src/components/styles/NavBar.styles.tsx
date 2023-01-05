@@ -4,17 +4,17 @@ interface NavBarInterface {
 }
 
 export const NavBarContainer = styled.section<NavBarInterface>`
-  position: relative;
   background-color: #fff;
-
   position: fixed;
   height: 75px;
   top: 0;
   left: 0;
   right: 0;
-
   z-index: 5;
+
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
 
   .navbar_wrapper {
     background-color: #fff;
@@ -25,14 +25,15 @@ export const NavBarContainer = styled.section<NavBarInterface>`
     padding-top: 1.3125rem;
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
     align-items: center;
+    gap: 1rem;
+    align-self: center;
 
     .logo_wrapper {
       display: flex;
       align-items: center;
       gap: 8px;
-      z-index: 4;
+      z-index: 6;
 
       h3 {
         font-size: 1.5rem;
@@ -80,9 +81,11 @@ export const NavBarContainer = styled.section<NavBarInterface>`
 
   @media screen and (max-width: 775px) {
     .navbar_wrapper {
+      width: 80%;
+      z-index: 5;
       .mobile-menu {
         display: flex;
-        align-self: flex-start;
+        align-self: center;
       }
       .nav_links_container {
         display: ${({ isMobileMenu }) => (isMobileMenu ? 'flex' : 'none')};
@@ -112,7 +115,7 @@ export const NavBarContainer = styled.section<NavBarInterface>`
       right: 0;
       height: 100vh;
       width: 100%;
-      z-index: 2;
+      /* z-index: 1; */
       background-color: #ffffff;
     }
   }

@@ -37,15 +37,18 @@ const HomePage = () => {
     <HomePageContainer>
       <NavBar />
       <Hero />
-      <QuoteCard
-        content="Having a bug free day, is like activating God mode."
-        author="J Thomson"
-      />
+      <QuoteCard />
       <section className="hobbie_section">
         <h2>HOBBIES</h2>
         <div className="grid_hobbies">
           {hobbies.map(({ id, icon, hobby, content }) => (
-            <HobbyCard id={id} icon={icon} hobby={hobby} content={content} />
+            <HobbyCard
+              id={id}
+              icon={icon}
+              hobby={hobby}
+              content={content}
+              key={id}
+            />
           ))}
         </div>
       </section>

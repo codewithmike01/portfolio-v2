@@ -1,20 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BorderButton from './BorderButton';
+import { quoteData } from './services/Quotes.service';
 import { QuoteContainer } from './styles/Quote.styles';
 
-interface QuoteInterface {
-  content: string;
-  author: string;
-}
+// Quote index initialization
+let index: number = 0;
 
-const QuoteCard: React.FC<QuoteInterface> = ({ content, author }) => {
+const QuoteCard = () => {
+  const [quotes, setQuotes] = useState({
+    id: quoteData[`${index}`].id,
+    content: quoteData[`${index}`].quote,
+    author: quoteData[`${index}`].author,
+  });
+
+  const handleQuote = (): void => {
+    if (index === 4) {
+      index = -1;
+    }
+
+    index = index + 1;
+    setQuotes({
+      id: quoteData[index].id,
+      content: quoteData[index].quote,
+      author: quoteData[index].author,
+    });
+  };
   return (
-    <QuoteContainer>
+    <QuoteContainer key={quotes.id}>
       <div className="quote_wrapper">
-        <p>“{content}”</p>
-        <p>Author: {author}</p>
+        <p>“{quotes.content}”</p>
+        <p className="author_name">Author: {quotes.author}</p>
       </div>
-      <BorderButton width="13rem" text="Generate Quote" />
+      <BorderButton width="13rem" text="Generate Quote" func={handleQuote} />
     </QuoteContainer>
   );
 };

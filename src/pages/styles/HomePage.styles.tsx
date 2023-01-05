@@ -22,7 +22,7 @@ export const HomePageContainer = styled.section`
 
     .grid_hobbies {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 3rem;
       width: 90%;
       margin: 0 auto;
@@ -30,6 +30,7 @@ export const HomePageContainer = styled.section`
   }
 
   .skills_section {
+    width: 100%;
     .skills_section_header {
       margin-top: -130px;
       background-color: var(--primary-bg);
@@ -44,7 +45,7 @@ export const HomePageContainer = styled.section`
       border: 1px solid rgba(0, 0, 0, 0.1);
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 8px;
-      width: 90%;
+      width: 80%;
       margin: 0 auto;
       margin-top: -57px;
       padding: 30px 20px;
@@ -72,6 +73,7 @@ export const HomePageContainer = styled.section`
     .react-multiple-carousel__arrow--left,
     .react-multiple-carousel__arrow--right {
       background: rgba(23, 74, 255, 0.8);
+      z-index: 2;
     }
     .react-multiple-carousel__arrow--right {
       right: 0;
@@ -82,7 +84,7 @@ export const HomePageContainer = styled.section`
     }
 
     .react-multi-carousel-track {
-      padding: 20px 0;
+      padding: 35px 0;
     }
   }
 `;
