@@ -16,6 +16,12 @@ import { FiMusic } from 'react-icons/fi';
 import { MdGamepad } from 'react-icons/md';
 import { IoFastFood } from 'react-icons/io5';
 
+// Testimony Import
+//-- Images
+
+import profile from '../../assets/images/test_image.jpg';
+import { FaBehanceSquare } from 'react-icons/fa'; //Behance icon
+
 // Hobbie Data
 export const hobbies: {
   id: number;
@@ -103,5 +109,58 @@ export const skills: {
     id: 11,
     skill: 'postgresql',
     image: `${postgresqlSkill}`,
+  },
+];
+
+// Testimony Data
+
+export const testimonyData: {
+  id: number;
+  name: string;
+  image: string;
+  icon: React.ReactElement;
+  testify: string;
+  link: string;
+  profession: string;
+}[] = [
+  {
+    id: 1,
+    name: 'Jane Frankly',
+    image: `${profile}`,
+    profession: 'Designer',
+    icon: <FaBehanceSquare />,
+    testify:
+      'Mike is a dedicated colleague, a team player and , with the zeal to see the work through.',
+    link: 'https://github.com/Ginohmk',
+  },
+  {
+    id: 2,
+    name: 'Bob Rosy',
+    image: `${profile}`,
+    profession: 'Designer',
+    icon: <FaBehanceSquare />,
+    testify:
+      'Mike is a dedicated colleague, a team player and , with the zeal to see the work through.',
+    link: 'https://github.com/Ginohmk',
+  },
+  {
+    id: 3,
+    name: 'Samson JB',
+    image: `${profile}`,
+    profession: 'Designer',
+    icon: <FaBehanceSquare />,
+    testify:
+      'Mike is a dedicated colleague, a team player and , with the zeal to see the work through.',
+    link: 'https://',
+  },
+  {
+    id: 4,
+    name: 'Linko Juka',
+    image: `${profile}`,
+    profession: 'Designer',
+    icon: <FaBehanceSquare />,
+    testify:
+      'Mike is a dedicated colleague, a team player and , with the zeal to see the work through.',
+    link: 'https://github.com/Ginohmk',
   },
 ];

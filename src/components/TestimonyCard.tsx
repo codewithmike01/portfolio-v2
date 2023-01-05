@@ -1,7 +1,39 @@
 import React from 'react';
+import { TestimonyContainer } from './styles/TestimonyCard.style';
 
-const TestimonyCard = () => {
-  return <div>Card Testimony</div>;
+interface TestimonyInterface {
+  id: number;
+  name: string;
+  image: string;
+  icon: React.ReactElement;
+  testify: string;
+  link: string;
+  profession: string;
+}
+const TestimonyCard: React.FC<TestimonyInterface> = ({
+  id,
+  name,
+  image,
+  icon,
+  testify,
+  link,
+  profession,
+}) => {
+  return (
+    <TestimonyContainer>
+      <div className="testimony_card_image">
+        <img src={image} alt="profile" />
+      </div>
+      <p className="card_owner">{name}</p>
+      <div className="card_profession">
+        <p>{profession}</p>
+        <a href={`${link}`} target="_blank" rel="noreferrer">
+          {icon}
+        </a>
+      </div>
+      <p className="card_text">{testify}</p>
+    </TestimonyContainer>
+  );
 };
 
 export default TestimonyCard;

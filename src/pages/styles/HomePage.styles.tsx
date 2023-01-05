@@ -60,4 +60,31 @@ export const HomePageContainer = styled.section`
       }
     }
   }
+
+  .testimony_section {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+
+    .react-multiple-carousel__arrow--left,
+    .react-multiple-carousel__arrow--right {
+      background: rgba(23, 74, 255, 0.8);
+    }
+    .react-multiple-carousel__arrow--right {
+      right: 0;
+    }
+
+    .react-multiple-carousel__arrow--left {
+      left: 0;
+    }
+
+    .react-multi-carousel-track {
+      /* border: 2px solid red; */
+
+      /* display: grid;
+      grid-template-columns: repeat(4, 454px); */
+    }
+  }
 `;
