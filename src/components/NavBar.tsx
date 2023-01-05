@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { MdOutlineClose } from 'react-icons/md';
@@ -8,10 +8,11 @@ import Logo from '../assets/images/logo.svg';
 
 const NavBar: React.FC = () => {
   const [isMobileMenu, setIsMobileMenu] = useState(false);
+  const naviagte = useNavigate();
   return (
     <NavBarContainer isMobileMenu={isMobileMenu}>
       <div className="navbar_wrapper">
-        <div className="logo_wrapper">
+        <div className="logo_wrapper" onClick={() => naviagte('/')}>
           <img src={Logo} alt="Logo" /> <h3>KMC</h3>
         </div>
 
