@@ -10,6 +10,7 @@ import SkillCard from '../components/SkillCard';
 import { hobbies, skills, testimonyData } from './services/HomePageServices';
 import BgButton from '../components/BgButton';
 import TestimonyCard from '../components/TestimonyCard';
+import Footer from '../components/Footer';
 
 const HomePage = () => {
   // Carousel Responsiveness
@@ -80,6 +81,8 @@ const HomePage = () => {
           )}
         </Carousel>
       </section>
+
+      <Footer />
     </HomePageContainer>
   );
 };

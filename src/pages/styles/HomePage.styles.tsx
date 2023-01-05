@@ -4,6 +4,7 @@ export const HomePageContainer = styled.section`
   display: flex;
   flex-direction: column;
   gap: 7.5rem;
+  width: 100%;
   /* General  */
   h2 {
     text-align: center;
@@ -66,7 +67,7 @@ export const HomePageContainer = styled.section`
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 34px;
+    gap: 64px;
 
     .react-multiple-carousel__arrow--left,
     .react-multiple-carousel__arrow--right {
@@ -81,10 +82,7 @@ export const HomePageContainer = styled.section`
     }
 
     .react-multi-carousel-track {
-      /* border: 2px solid red; */
-
-      /* display: grid;
-      grid-template-columns: repeat(4, 454px); */
+      padding: 20px 0;
     }
   }
 `;

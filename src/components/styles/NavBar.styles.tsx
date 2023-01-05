@@ -47,6 +47,9 @@ export const NavBarContainer = styled.section<NavBarInterface>`
       .social_container {
         display: flex;
         gap: 1.645625rem;
+        a {
+          font-size: 1.2rem;
+        }
       }
 
       /* General Nav Link Container */
