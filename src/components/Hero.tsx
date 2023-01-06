@@ -2,8 +2,10 @@ import React from 'react';
 import BgButton from './BgButton';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { HeroContainer } from './styles/Hero.styles';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <HeroContainer>
       <div className="hero_wrapper">
@@ -20,6 +22,7 @@ const Hero = () => {
         text="See My Projects"
         width="10rem"
         icon={<FiArrowUpRight />}
+        func={() => navigate('/project')}
       />
     </HeroContainer>
   );

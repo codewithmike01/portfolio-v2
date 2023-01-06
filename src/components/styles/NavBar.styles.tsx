@@ -34,6 +34,7 @@ export const NavBarContainer = styled.section<NavBarInterface>`
       align-items: center;
       gap: 8px;
       z-index: 6;
+      cursor: pointer;
 
       h3 {
         font-size: 1.5rem;

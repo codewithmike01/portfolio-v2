@@ -54,6 +54,11 @@ export const HomePageContainer = styled.section`
       display: flex;
       flex-direction: column;
       gap: 3rem;
+
+      .skill_mail_to {
+        text-decoration: none;
+      }
+
       .grid_skills {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));

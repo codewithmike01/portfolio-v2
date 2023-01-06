@@ -11,8 +11,10 @@ import { hobbies, skills, testimonyData } from './services/HomePageServices';
 import BgButton from '../components/BgButton';
 import TestimonyCard from '../components/TestimonyCard';
 import Footer from '../components/Footer';
+import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
+  const navigate = useNavigate();
   // Carousel Responsiveness
   const responsive = {
     superLargeDesktop: {
@@ -62,7 +64,12 @@ const HomePage = () => {
               <SkillCard id={id} skill={skill} image={image} />
             ))}
           </div>
-          <BgButton text="Contact Me Now" width="10rem" />
+
+          <BgButton
+            text="Contact Me Now"
+            width="10rem"
+            func={() => navigate('/contact')}
+          />
         </div>
       </section>
 
