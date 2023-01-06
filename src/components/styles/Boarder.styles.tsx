@@ -6,6 +6,7 @@ interface BorderStyleInterface {
 export const BorderContainer = styled.button<BorderStyleInterface>`
   cursor: pointer;
   max-width: ${({ width }) => (width ? `${width}` : '20rem')};
+  width: 100%;
   align-self: flex-end;
   margin-right: 3rem;
   background-color: transparent;

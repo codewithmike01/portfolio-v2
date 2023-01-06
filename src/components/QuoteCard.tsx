@@ -31,7 +31,7 @@ const QuoteCard = () => {
         <p>“{quotes.content}”</p>
         <p className="author_name">Author: {quotes.author}</p>
       </div>
-      <BorderButton width="13rem" text="Generate Quote" func={handleQuote} />
+      <BorderButton width="10rem" text="Generate Quote" func={handleQuote} />
     </QuoteContainer>
   );
 };

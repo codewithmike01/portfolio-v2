@@ -1,7 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import BgButton from '../components/BgButton';
+import { BlogContiainer } from './styles/Blog.styles';
 
 const BlogPage = () => {
-  return <div>BlogPage</div>;
+  const navigate = useNavigate();
+  return (
+    <BlogContiainer>
+      <p>Projects in Progress, Coming Soon...</p>
+      <BgButton text="Back to home" func={() => navigate('/')} width="10rem" />
+    </BlogContiainer>
+  );
 };
 
 export default BlogPage;

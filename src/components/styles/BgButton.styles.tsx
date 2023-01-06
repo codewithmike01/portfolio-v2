@@ -6,6 +6,7 @@ interface BgStyleInterface {
 
 export const BgButtonContainer = styled.button<BgStyleInterface>`
   max-width: ${({ width }) => (width ? `${width}` : '20rem')};
+  width: 100%;
   margin: 0 auto;
   background-color: var(--primary-bg);
   color: #fff;
