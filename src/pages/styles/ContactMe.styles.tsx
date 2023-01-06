@@ -67,17 +67,4 @@ export const ContactContainer = styled.section`
       }
     }
   }
-
-  /* FORM RESPONSE */
-
-  .email_res {
-    display: flex;
-    flex-direction: column;
-    align-items: Center;
-    justify-content: center;
-
-    p {
-      font-size: 1.3rem;
-    }
-  }
 `;
