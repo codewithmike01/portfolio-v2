@@ -62,7 +62,7 @@ const HomePage = () => {
               <SkillCard id={id} skill={skill} image={image} />
             ))}
           </div>
-          <BgButton text="Contact Me Now" />
+          <BgButton text="Contact Me Now" width="10rem" />
         </div>
       </section>
 

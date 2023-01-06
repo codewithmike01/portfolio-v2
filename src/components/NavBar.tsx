@@ -9,6 +9,12 @@ import Logo from '../assets/images/logo.svg';
 const NavBar: React.FC = () => {
   const [isMobileMenu, setIsMobileMenu] = useState(false);
   const naviagte = useNavigate();
+
+  const handleActiveLink = ({ isActive }: any): object => {
+    return {
+      color: isActive ? 'blue' : '',
+    };
+  };
   return (
     <NavBarContainer isMobileMenu={isMobileMenu}>
       <div className="navbar_wrapper">
@@ -18,10 +24,18 @@ const NavBar: React.FC = () => {
 
         <div className="nav_links_container">
           <div className="nav_links">
-            <NavLink to="/project">Project</NavLink>
-            <NavLink to="/blog">Blog</NavLink>
-            <NavLink to="/resume">Resume</NavLink>
-            <NavLink to="/contact">Contact Me</NavLink>
+            <NavLink to="/project" style={handleActiveLink}>
+              Project
+            </NavLink>
+            <NavLink to="/blog" style={handleActiveLink}>
+              Blog
+            </NavLink>
+            <NavLink to="/resume" style={handleActiveLink}>
+              Resume
+            </NavLink>
+            <NavLink to="/contact" style={handleActiveLink}>
+              Contact Me
+            </NavLink>
           </div>
 
           <div className="social_container">
