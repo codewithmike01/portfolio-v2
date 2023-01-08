@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar';
 import ProjectCard from '../components/ProjectCard';
 import { ProjectPageContainer } from './styles/ProjectPage.styles';
 import { ProjectData } from './services/ProjectPage.service';
+import Footer from '../components/Footer';
 
 const ProjectPage = () => {
   // const [projectSpec, setProjectSpec] = useState('frontend');
@@ -46,6 +47,7 @@ const ProjectPage = () => {
           )}
         </section>
       </ProjectPageContainer>
+      <Footer />
     </>
   );
 };

@@ -47,7 +47,7 @@ const ProjectCard: React.FC<ProjectCardInterface> = ({
         </p>
 
         <div className="project_button_container">
-          <a href="nope" target="_blank">
+          <a href={viewLink} target="_blank" rel="noreferrer">
             View <FiArrowUpRight />
           </a>
 

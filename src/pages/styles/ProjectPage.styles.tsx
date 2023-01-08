@@ -5,9 +5,10 @@ export const ProjectPageContainer = styled.section`
   max-width: 1440px;
   margin: 0 auto;
   margin-top: 10rem;
+  margin-bottom: 8rem;
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 45px;
 
   h2 {
     text-align: center;
