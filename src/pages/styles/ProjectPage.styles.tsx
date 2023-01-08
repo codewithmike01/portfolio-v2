@@ -7,7 +7,7 @@ export const ProjectPageContainer = styled.section`
   margin-top: 10rem;
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 64px;
 
   h2 {
     text-align: center;
@@ -17,6 +17,7 @@ export const ProjectPageContainer = styled.section`
     text-align: center;
   }
 
+  /* Swither from Frontend to Fullstack */
   .project_spec_container {
     display: flex;
     align-items: center;
@@ -31,7 +32,6 @@ export const ProjectPageContainer = styled.section`
       padding: 10px;
       width: 220px;
       height: 40px;
-      margin: 0 auto;
 
       p {
         font-size: 1.2rem;
@@ -40,6 +40,20 @@ export const ProjectPageContainer = styled.section`
     .bg {
       background-color: var(--primary-bg);
       color: #fff;
+    }
+  }
+
+  .project_card_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 2.3rem;
+    grid-column-gap: 1.5rem;
+  }
+
+  @media screen and (max-width: 745px) {
+    .project_card_container {
+      grid-template-columns: 1fr;
+      grid-row-gap: 2rem;
     }
   }
 `;

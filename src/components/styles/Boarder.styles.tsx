@@ -8,7 +8,7 @@ export const BorderContainer = styled.button<BorderStyleInterface>`
   max-width: ${({ width }) => (width ? `${width}` : '20rem')};
   width: 100%;
   align-self: flex-end;
-  margin-right: 3rem;
+  /* margin-right: 3rem; */
   background-color: transparent;
   color: var(--primary-text);
   display: flex;

@@ -22,6 +22,7 @@ export const QuoteContainer = styled.section`
   button {
     position: absolute;
     bottom: 10px;
+    margin-right: 2rem;
   }
 
   .author_name {

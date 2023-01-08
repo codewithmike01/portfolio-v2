@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import NavBar from '../components/NavBar';
+import ProjectCard from '../components/ProjectCard';
 import { ProjectPageContainer } from './styles/ProjectPage.styles';
+import { ProjectData } from './services/ProjectPage.service';
 
 const ProjectPage = () => {
-  const [projectSpec, setProjectSpec] = useState('frontend');
+  // const [projectSpec, setProjectSpec] = useState('frontend');
   return (
     <>
       <NavBar />
@@ -11,7 +13,8 @@ const ProjectPage = () => {
         <h2>My Projects</h2>
 
         <section className="project_spec_container">
-          <div
+          {/* Under Cosideration when becoame fullstack */}
+          {/* <div
             className={`project_spec ${projectSpec === 'frontend' ? 'bg' : ''}`}
             onClick={() => setProjectSpec('frontend')}
           >
@@ -25,7 +28,22 @@ const ProjectPage = () => {
             onClick={() => setProjectSpec('fullstack')}
           >
             <p>Fullstack</p>
-          </div>
+          </div> */}
+        </section>
+
+        <section className="project_card_container">
+          {ProjectData.map(
+            ({ id, title, description, viewLink, image, stack }) => (
+              <ProjectCard
+                id={id}
+                title={title}
+                viewLink={viewLink}
+                image={image}
+                stack={stack}
+                description={description}
+              />
+            )
+          )}
         </section>
       </ProjectPageContainer>
     </>

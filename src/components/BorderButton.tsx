@@ -16,7 +16,7 @@ const BorderButton: React.FC<BorderInterface> = ({
 }) => {
   return (
     <BorderContainer width={width} onClick={() => (func ? func() : {})}>
-      {text}
+      {text} {icon}
     </BorderContainer>
   );
 };
