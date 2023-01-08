@@ -24,12 +24,19 @@ const ContactMe = () => {
           alignItems: 'center',
           justifyContent: 'center',
           height: '100vh',
+          width: '90%',
+          margin: '0 auto',
+          textAlign: 'center',
         }}
       >
         <p style={{ fontSize: '1.3rem' }}>
           Thanks for reaching out, I will respond shortly!
         </p>
-        <BgButton text="Back to Home" func={() => navigate('/')} />
+        <BgButton
+          text="Back to Home"
+          func={() => navigate('/')}
+          width="10rem"
+        />
       </div>
     );
   }
