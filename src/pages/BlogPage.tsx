@@ -10,7 +10,7 @@ const BlogPage = () => {
     <>
       <NavBar />
       <BlogContiainer>
-        <p>Projects in Progress, Coming Soon...</p>
+        <p>Blog posts in Progress, Coming Soon...</p>
         <BgButton
           text="Back to home"
           func={() => navigate('/')}
