@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiArrowUpRight } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 import BorderButton from './BorderButton';
 import { ProjectCardContainer } from './styles/ProjectCard.styles';
 
@@ -20,6 +21,7 @@ const ProjectCard: React.FC<ProjectCardInterface> = ({
   viewLink,
   image,
 }) => {
+  const navigate = useNavigate();
   return (
     <ProjectCardContainer>
       <div className="project_image_stack_container">
@@ -41,17 +43,19 @@ const ProjectCard: React.FC<ProjectCardInterface> = ({
       </div>
 
       <div className="description_action_button">
-        <p>
-          Apply for me is a project aim to help, IT professionals seeking for
-          jobs, to be more productive while doing a job search...
-        </p>
+        <p>{description}</p>
 
         <div className="project_button_container">
           <a href={viewLink} target="_blank" rel="noreferrer">
             View <FiArrowUpRight />
           </a>
 
-          <BorderButton text="Usecase" icon={<FiArrowUpRight />} width="5rem" />
+          <BorderButton
+            text="Usecase"
+            icon={<FiArrowUpRight />}
+            width="5rem"
+            func={() => navigate(`/project/${id}`)}
+          />
         </div>
       </div>
     </ProjectCardContainer>
