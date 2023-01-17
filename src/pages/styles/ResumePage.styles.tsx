@@ -8,6 +8,7 @@ export const ResumePageContainer = styled.section`
   position: relative;
   display: flex;
   flex-direction: column;
+
   gap: 60px;
 
   .resume_header_container {
@@ -62,6 +63,10 @@ export const ResumePageContainer = styled.section`
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    gap: 60px;
     .resume_content_wrapper {
       display: flex;
       flex-direction: column;
@@ -124,7 +129,7 @@ export const ResumePageContainer = styled.section`
             .rectangle {
               margin-top: -10px;
               width: 5px;
-              min-height: 135px;
+              min-height: 150px;
 
               background-color: var(--primary-bg);
             }
@@ -151,12 +156,18 @@ export const ResumePageContainer = styled.section`
         }
       }
     }
+
+    .download_btn_mobile {
+      display: none;
+    }
   }
 
   .certificate_container {
     background-color: var(--primary-bg);
     color: #fff;
     padding: 1rem 0 2rem 0;
+    width: 100%;
+
     h3 {
       letter-spacing: 1.5px;
     }
@@ -165,6 +176,73 @@ export const ResumePageContainer = styled.section`
       width: 90%;
       max-width: 1440px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .carousel_cert {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 550px;
+        img {
+          width: 100%;
+          height: 100%;
+          image-rendering: crisp-edges;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 754px) {
+    .resume_header_container {
+      .resume_header_wrapper {
+        .download_wraper {
+          display: none;
+        }
+      }
+    }
+
+    .resume_main {
+      .download_btn_mobile {
+        display: block;
+        .download_wraper {
+          a {
+            color: #fff;
+            text-decoration: none;
+
+            .btn_content {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 10px;
+              text-align: center;
+              width: 220px;
+              background-color: var(--primary-bg);
+              padding: 8px 12px;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .resume_details_container {
+        .resume_details_content_container {
+          /* Bullet and content */
+          .resume_details_wrapper {
+            .resume_rule {
+              .rectangle {
+                min-height: 180px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .certificate_container {
+      display: none;
     }
   }
 `;

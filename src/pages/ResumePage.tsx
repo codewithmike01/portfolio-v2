@@ -1,5 +1,7 @@
 import React from 'react';
+import Carousel from 'nuka-carousel';
 import {
+  Certificate,
   ResumeEducation,
   ResumeExperience,
 } from './services/ResumePage.service';
@@ -17,7 +19,7 @@ const ResumePage: React.FC = () => {
             <div>
               <img src={Logo} alt="logo" />
             </div>
-            <div className="download_wraper">
+            <div className="download_wraper desktop">
               <a
                 href="../assets/doc/01_Mike_kanu_(Front_end_software_engineer).docx"
                 download
@@ -90,13 +92,32 @@ const ResumePage: React.FC = () => {
               </div>
             </div>
           </section>
+
+          <div className="download_btn_mobile">
+            <div className="download_wraper">
+              <a
+                href="../assets/doc/01_Mike_kanu_(Front_end_software_engineer).docx"
+                download
+              >
+                <div className="btn_content">
+                  <p>Download Resume</p> <MdOutlineDownloading />
+                </div>
+              </a>
+            </div>
+          </div>
         </section>
 
         <section className="certificate_container">
           <div className="certificate_wrapper">
             <h3>CERTIFICATES</h3>
 
-            <p>carousel of certificates Here</p>
+            <Carousel>
+              {Certificate.map(({ id, image }) => (
+                <div className="carousel_cert" key={id}>
+                  <img src={image} alt="Microverse Fullstack" />
+                </div>
+              ))}
+            </Carousel>
           </div>
         </section>
       </ResumePageContainer>
