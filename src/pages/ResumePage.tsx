@@ -1,25 +1,107 @@
 import React from 'react';
+import {
+  ResumeEducation,
+  ResumeExperience,
+} from './services/ResumePage.service';
 import { ResumePageContainer } from './styles/ResumePage.styles';
 import { MdOutlineDownloading } from 'react-icons/md';
 import Logo from '../assets/images/logo.svg';
-const ResumePage = () => {
+import Footer from '../components/Footer';
+
+const ResumePage: React.FC = () => {
   return (
-    <ResumePageContainer>
-      <section className="resume_header_container">
-        <div>
-          <img src={Logo} alt="logo" />
-        </div>
-        <div className="download_wraper">
-          <a
-            href="../assets/doc/01_Mike_kanu_(Front_end_software_engineer).docx"
-            download
-          >
-            <p>Download Resume</p>
-            <MdOutlineDownloading />
-          </a>
-        </div>
-      </section>
-    </ResumePageContainer>
+    <>
+      <ResumePageContainer>
+        <section className="resume_header_container">
+          <div className="resume_header_wrapper">
+            <div>
+              <img src={Logo} alt="logo" />
+            </div>
+            <div className="download_wraper">
+              <a
+                href="../assets/doc/01_Mike_kanu_(Front_end_software_engineer).docx"
+                download
+              >
+                <p>Download Resume</p>
+                <MdOutlineDownloading />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="resume_main">
+          <section className="resume_content_wrapper">
+            <div className="resume_content_header">
+              <h1 className="profile_name">Kanu Mike Chibundu</h1>
+              <h2 className="profession_name">Frontend Web Developer</h2>
+            </div>
+          </section>
+          <section className="resume_details_container">
+            {/* Main Content with bullet */}
+
+            {/* Education */}
+            <div className="resume_details_content_container">
+              <h3 className="resume_details_head">EDUCATION</h3>
+              <div>
+                {ResumeEducation.map(({ eduName, course, year, id, grade }) => (
+                  <div className="resume_details_wrapper" key={id}>
+                    <div className="resume_rule">
+                      <div className="circle"></div>
+                      <div className="rectangle"></div>
+                    </div>
+                    <div className="resume_details_wrapper_content">
+                      <div>
+                        <h4 className="resume_details_head_inner">{eduName}</h4>
+                        <p className="date">{year}</p>
+                      </div>
+                      <div>
+                        <p className="course">{course}</p>
+                        <p>{grade}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Experience */}
+            <div className="resume_details_content_container">
+              <h3 className="resume_details_head">EXPERIENCE</h3>
+              <div>
+                {ResumeExperience.map(({ companyName, position, year, id }) => (
+                  <div className="resume_details_wrapper" key={id}>
+                    <div className="resume_rule">
+                      <div className="circle"></div>
+                      <div className="rectangle"></div>
+                    </div>
+                    <div className="resume_details_wrapper_content">
+                      <div>
+                        <h4 className="resume_details_head_inner">
+                          {companyName}
+                        </h4>
+                        <p className="date">{year}</p>
+                      </div>
+                      <div>
+                        <p className="course">{position}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section className="certificate_container">
+          <div className="certificate_wrapper">
+            <h3>CERTIFICATES</h3>
+
+            <p>carousel of certificates Here</p>
+          </div>
+        </section>
+      </ResumePageContainer>
+      <Footer />
+    </>
   );
 };
 
