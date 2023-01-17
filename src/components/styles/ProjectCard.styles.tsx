@@ -79,21 +79,24 @@ export const ProjectCardContainer = styled.div`
       gap: 30px;
       align-items: center;
       justify-content: center;
-      width: 100%;
+      width: 90%;
+      margin: 0 auto;
 
       a {
+        max-width: 6rem;
+        width: 100%;
+        margin: 0 auto;
+        background-color: var(--primary-bg);
+        color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
-        width: 5rem;
-        border: 1px solid var(--primary-bg);
-        background-color: var(--primary-bg);
-        text-decoration: none;
-        padding: 13px 24px;
+        padding: 12px 24px;
         border-radius: 8px;
-        color: #fff;
-        font-size: 1, 1rem;
+        border: 1px solid var(--primary-bg);
+        cursor: pointer;
+        text-decoration: none;
 
         svg {
           color: #fff;

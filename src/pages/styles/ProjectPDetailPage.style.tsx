@@ -8,6 +8,7 @@ export const ProjectPageDetailContainer = styled.section`
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding-bottom: 3rem;
 
   .project_details_container {
     width: 90%;
@@ -37,8 +38,18 @@ export const ProjectPageDetailContainer = styled.section`
     .project_detail_skill {
       .contact_me {
         a {
-          color: var(--primary-text);
+          color: var(--primary-bg);
           text-decoration: underline 2px var(--primary-bg);
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          gap: 1rem;
+          text-decoration: none;
+
+          svg {
+            font-size: 1.5rem;
+          }
         }
       }
 

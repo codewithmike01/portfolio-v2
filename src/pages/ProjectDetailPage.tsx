@@ -3,6 +3,7 @@ import { ProjectPageDetailContainer } from './styles/ProjectPDetailPage.style';
 import NavBar from '../components/NavBar';
 import ProjectPicture from '../assets/images/test_project1.png';
 import { GiConfirmed } from 'react-icons/gi';
+import { GrMail } from 'react-icons/gr';
 import { SiBuymeacoffee } from 'react-icons/si';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
@@ -99,9 +100,13 @@ const ProjectDetailPage = () => {
             </div>
           </div>
 
-          <div className="project_detail_skill contact_me">
+          <div className="project_detail_skill">
             <p className="contact_me">
-              <Link to="/contact"> Contact Me Now</Link>
+              <Link to="/contact">
+                {' '}
+                Contact Me Now
+                <GrMail />
+              </Link>
             </p>
           </div>
         </section>
