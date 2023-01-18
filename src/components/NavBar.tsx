@@ -19,7 +19,7 @@ const NavBar: React.FC = () => {
     <NavBarContainer isMobileMenu={isMobileMenu}>
       <div className="navbar_wrapper">
         <div className="logo_wrapper" onClick={() => naviagte('/')}>
-          <img src={Logo} alt="Logo" /> <h3>KMC</h3>
+          <img src={Logo} alt="Logo" /> <h3>RoyalStack</h3>
         </div>
 
         <div className="nav_links_container">

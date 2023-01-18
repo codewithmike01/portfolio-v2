@@ -27,6 +27,17 @@ export const ResumePageContainer = styled.section`
       justify-content: space-between;
       align-items: center;
 
+      .logo_image {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+
       .download_wraper {
         a {
           display: flex;

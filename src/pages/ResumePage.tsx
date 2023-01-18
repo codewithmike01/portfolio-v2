@@ -9,15 +9,18 @@ import { ResumePageContainer } from './styles/ResumePage.styles';
 import { MdOutlineDownloading } from 'react-icons/md';
 import Logo from '../assets/images/logo.svg';
 import Footer from '../components/Footer';
+import { useNavigate } from 'react-router-dom';
 
 const ResumePage: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <>
       <ResumePageContainer>
         <section className="resume_header_container">
           <div className="resume_header_wrapper">
-            <div>
+            <div className="logo_image" onClick={() => navigate('/')}>
               <img src={Logo} alt="logo" />
+              <h3>RoyalStack</h3>
             </div>
             <div className="download_wraper desktop">
               <a href="/src/assets/doc/test.pdf" download>

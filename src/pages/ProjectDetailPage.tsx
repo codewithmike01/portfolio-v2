@@ -9,6 +9,7 @@ import { FiArrowUpRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import BorderButton from '../components/BorderButton';
 import BgButton from '../components/BgButton';
+import Footer from '../components/Footer';
 const ProjectDetailPage = () => {
   return (
     <>
@@ -120,6 +121,7 @@ const ProjectDetailPage = () => {
           <BgButton text="View Live" icon={<FiArrowUpRight />} width="10rem" />
         </section>
       </ProjectPageDetailContainer>
+      <Footer />
     </>
   );
 };

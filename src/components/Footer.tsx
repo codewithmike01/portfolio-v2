@@ -46,7 +46,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <div>Powered by Coded Stack</div>
+        <div>Powered by Royal Stack</div>
       </div>
     </FooterContainer>
   );
