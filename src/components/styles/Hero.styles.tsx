@@ -7,7 +7,7 @@ export const HeroContainer = styled.section`
   display: flex;
   flex-direction: column;
   gap: 48px;
-  margin-top: 8rem;
+  margin-top: 10rem;
 
   .hero_wrapper {
     text-align: center;

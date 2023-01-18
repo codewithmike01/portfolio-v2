@@ -73,8 +73,8 @@ export const ProjectPageDetailContainer = styled.section`
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 10px 15px;
-          background-color: var(--primary-bg);
+          padding: 4px 15px;
+          background-color: rgba(23, 74, 255, 0.8);
           color: #fff;
           border-radius: 4px;
         }

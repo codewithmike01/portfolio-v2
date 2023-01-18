@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const HomePageContainer = styled.section`
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 7.5rem;
   width: 100%;
   /* General  */
   h2 {
