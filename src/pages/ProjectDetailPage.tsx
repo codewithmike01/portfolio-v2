@@ -7,7 +7,6 @@ import { GrMail } from 'react-icons/gr';
 import { SiBuymeacoffee } from 'react-icons/si';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import BorderButton from '../components/BorderButton';
 import BgButton from '../components/BgButton';
 import Footer from '../components/Footer';
 const ProjectDetailPage = () => {
@@ -113,11 +112,16 @@ const ProjectDetailPage = () => {
         </section>
 
         <section className="project_details_btn_container">
-          <BorderButton
-            text="Buy me a coffee"
-            icon={<SiBuymeacoffee />}
-            width="10rem"
-          />
+          <a
+            href="https://www.buymeacoffee.com/kanumikech0"
+            target="_blank"
+            className="buy_coffee"
+            rel="noreferrer"
+          >
+            {' '}
+            <p>Buy me a coffee</p>
+            <SiBuymeacoffee />
+          </a>
           <BgButton text="View Live" icon={<FiArrowUpRight />} width="10rem" />
         </section>
       </ProjectPageDetailContainer>

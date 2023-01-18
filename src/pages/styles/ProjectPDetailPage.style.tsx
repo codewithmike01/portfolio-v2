@@ -106,6 +106,22 @@ export const ProjectPageDetailContainer = styled.section`
     gap: 3rem;
     width: 70%;
     margin: 0 auto;
+
+    .buy_coffee {
+      cursor: pointer;
+      width: 10rem;
+      margin: 0 auto;
+      background-color: transparent;
+      color: var(--primary-text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 24px;
+      border-radius: 8px;
+      border: 1px solid var(--primary-bg);
+      text-decoration: none;
+    }
   }
 
   @media screen and (max-width: 675px) {
