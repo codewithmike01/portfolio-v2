@@ -82,7 +82,7 @@ export const NavBarContainer = styled.section<NavBarInterface>`
 
   @media screen and (max-width: 775px) {
     .navbar_wrapper {
-      width: 80%;
+      width: 90%;
       z-index: 5;
       .mobile-menu {
         display: flex;

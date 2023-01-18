@@ -37,5 +37,9 @@ export const QuoteContainer = styled.section`
     p {
       font-size: 1.4rem;
     }
+
+    button {
+      margin-right: 0;
+    }
   }
 `;
