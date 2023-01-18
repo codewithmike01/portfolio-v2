@@ -7,6 +7,7 @@ import {
 } from './services/ResumePage.service';
 import { ResumePageContainer } from './styles/ResumePage.styles';
 import { MdOutlineDownloading } from 'react-icons/md';
+import { AiOutlineDownload } from 'react-icons/ai';
 import Logo from '../assets/images/logo.svg';
 import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
@@ -28,6 +29,8 @@ const ResumePage: React.FC = () => {
                 <MdOutlineDownloading />
               </a>
             </div>
+
+            <AiOutlineDownload className="download_mobile" />
           </div>
         </section>
 

@@ -67,6 +67,10 @@ export const ResumePageContainer = styled.section`
           }
         }
       }
+
+      .download_mobile {
+        display: none;
+      }
     }
   }
 
@@ -211,6 +215,27 @@ export const ResumePageContainer = styled.section`
       .resume_header_wrapper {
         .download_wraper {
           display: none;
+        }
+        .download_mobile {
+          display: flex;
+          font-size: 1.5rem;
+          color: var(--primary-bg);
+
+          animation: Bounce 1s ease-in-out infinite;
+
+          @keyframes Bounce {
+            0% {
+              transform: scale(1);
+            }
+
+            50% {
+              transform: scale(1.1);
+            }
+
+            100% {
+              transform: scale(1.2);
+            }
+          }
         }
       }
     }
