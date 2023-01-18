@@ -20,10 +20,7 @@ const ResumePage: React.FC = () => {
               <img src={Logo} alt="logo" />
             </div>
             <div className="download_wraper desktop">
-              <a
-                href="../assets/doc/01_Mike_kanu_(Front_end_software_engineer).docx"
-                download
-              >
+              <a href="/src/assets/doc/test.pdf" download>
                 <p>Download Resume</p>
                 <MdOutlineDownloading />
               </a>

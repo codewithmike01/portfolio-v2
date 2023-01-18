@@ -14,27 +14,27 @@ export const ResumeEducation: {
 }[] = [
   {
     id: 1,
-    eduName: 'MICROVERSE LOS ANGELES (REMOTE).',
-    year: '2006 - 2010',
+    eduName: 'MICROVERSE San Francisco (REMOTE).',
+    year: 'Nov 2021 - Sep 2022',
     course: 'FULL STACK WEB DEVELOPER',
   },
   {
     id: 2,
     eduName: 'ALX (REMOTE).',
-    year: '2006 - 2010',
+    year: 'Aug 2022 - Oct 2022',
     course: 'FULL STACK WEB DEVELOPER',
   },
   {
     id: 3,
     eduName: 'AUCHI POLYTECHNIC, EDO STATE, NIGERIA.',
-    year: '2006 - 2010',
+    year: 'Nov 2019 - Jun 2021',
     course: 'COMPUTER SCIENCE (HIGHER NATIONAL DIPLOMA)',
     grade: 'DISTINCTION (3.70/4.0)',
   },
   {
     id: 4,
     eduName: 'IDAH POLYTECHNIC, KOGI STATE, NIGERIA.',
-    year: '2006 - 2010',
+    year: 'Sep 2015 - Jun 2017',
     course: 'COMPUTER SCIENCE (NATIONAL DIPLOMA)',
     grade: 'DISTINCTION (3.60/4.0)',
   },
@@ -49,19 +49,19 @@ export const ResumeExperience: {
   {
     id: 1,
     companyName: 'LECTIE',
-    year: '2006 - Present',
+    year: 'Aug 2022 - Present',
     position: 'FRONTEND WEB DEVELOPER',
   },
   {
     id: 2,
     companyName: 'HNG (REMOTE INTERSHIP)',
-    year: '2006 - 2010',
+    year: 'Sep 2022 - Nov 2022',
     position: 'FRONTEND WEB DEVELOPER',
   },
   {
     id: 3,
     companyName: 'MICROVERSE (REMOTE)',
-    year: '2006 - 2010',
+    year: 'May 2022 - Dec 2022',
     position: 'CODE REVIEWER',
   },
 ];
@@ -71,22 +71,18 @@ export const Certificate: {
 }[] = [
   {
     id: 1,
-
     image: `${MicroverseFullStack}`,
   },
   {
     id: 2,
-
     image: `${MicroverseJavascript}`,
   },
   {
     id: 3,
-
     image: `${AlxFullstack}`,
   },
   {
     id: 4,
-
     image: `${Oracle}`,
   },
 ];
