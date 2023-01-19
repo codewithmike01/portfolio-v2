@@ -24,13 +24,22 @@ const ResumePage: React.FC = () => {
               <h3>RoyalStack</h3>
             </div>
             <div className="download_wraper desktop">
-              <a href="/src/assets/doc/test.pdf" download>
+              <a
+                href={require('../assets/doc/01_Mike_kanu_(Front_end_software_engineer).docx')}
+                download={'01_Kanu_Mike_Resume.docx'}
+              >
                 <p>Download Resume</p>
                 <MdOutlineDownloading />
               </a>
             </div>
-
-            <AiOutlineDownload className="download_mobile" />
+            {/* Mobile download icon */}
+            <a
+              href={require('../assets/doc/01_Mike_kanu_(Front_end_software_engineer).docx')}
+              download={'01_Kanu_Mike_Resume.docx'}
+              className="download_mobile"
+            >
+              <AiOutlineDownload />
+            </a>
           </div>
         </section>
 
@@ -99,8 +108,8 @@ const ResumePage: React.FC = () => {
           <div className="download_btn_mobile">
             <div className="download_wraper">
               <a
-                href="../assets/doc/01_Mike_kanu_(Front_end_software_engineer).docx"
-                download
+                href={require('../assets/doc/01_Mike_kanu_(Front_end_software_engineer).docx')}
+                download={'01_Kanu_Mike_Resume.docx'}
               >
                 <div className="btn_content">
                   <p>Download Resume</p> <MdOutlineDownloading />
