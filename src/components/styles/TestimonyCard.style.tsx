@@ -33,13 +33,14 @@ export const TestimonyContainer = styled.section`
     display: flex;
     align-items: center;
     gap: 5px;
+    text-decoration: none;
+    color: var(--primary-text);
 
-    a {
-      text-decoration: none;
-      color: var(--primary-text);
-      svg {
-        font-size: 1.25rem;
-      }
+    p {
+      color: var(--primary-bg);
+    }
+    svg {
+      font-size: 1.25rem;
     }
   }
 

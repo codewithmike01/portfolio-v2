@@ -25,12 +25,17 @@ const TestimonyCard: React.FC<TestimonyInterface> = ({
         <img src={image} alt="profile" />
       </div>
       <p className="card_owner">{name}</p>
-      <div className="card_profession">
+      <a
+        href={`${link}`}
+        target="_blank"
+        rel="noreferrer"
+        className="card_profession"
+      >
         <p>{profession}</p>
-        <a href={`${link}`} target="_blank" rel="noreferrer">
-          {icon}
-        </a>
-      </div>
+
+        {icon}
+      </a>
+
       <p className="card_text">{testify}</p>
     </TestimonyContainer>
   );
