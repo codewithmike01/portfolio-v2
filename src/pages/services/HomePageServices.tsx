@@ -20,6 +20,7 @@ import { IoFastFood } from 'react-icons/io5';
 //-- Images
 
 import profile from '../../assets/images/test_image.jpg';
+import IkegbunamIjeoma from '../../assets/images/Ikegbunam_Ijeoma.jpg';
 import { FaBehanceSquare } from 'react-icons/fa'; //Behance icon
 
 // Hobbie Data
@@ -145,13 +146,13 @@ export const testimonyData: {
   },
   {
     id: 3,
-    name: 'Samson JB',
-    image: `${profile}`,
+    name: 'Ikegbunam Ijeoma',
+    image: `${IkegbunamIjeoma}`,
     profession: 'Designer',
     icon: <FaBehanceSquare />,
     testify:
-      'Mike is a dedicated colleague, a team player and , with the zeal to see the work through.',
-    link: 'https://',
+      'I had the opportunity working with mike on a group project of 7 members, I notice he has a proven knowledge of web development and works well with a team.',
+    link: 'https://www.behance.net/ikegbunamijeoma/projects',
   },
   {
     id: 4,
