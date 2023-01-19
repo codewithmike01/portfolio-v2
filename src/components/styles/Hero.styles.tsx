@@ -17,8 +17,9 @@ export const HeroContainer = styled.section`
 
     p {
       align-self: center;
-      max-width: 467px;
-      line-height: 1.5rem;
+      max-width: 680px;
+      line-height: 1.65rem;
+      letter-spacing: 1.5px;
       word-spacing: 1px;
     }
   }
