@@ -51,10 +51,10 @@ export const ProjectPageContainer = styled.section`
     grid-column-gap: 1.5rem;
   }
 
-  @media screen and (max-width: 745px) {
+  @media screen and (max-width: 1045px) {
     .project_card_container {
       grid-template-columns: 1fr;
-      grid-row-gap: 2rem;
+      grid-row-gap: 3rem;
     }
   }
 `;

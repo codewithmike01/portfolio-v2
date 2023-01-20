@@ -6,7 +6,7 @@ export const ProjectCardContainer = styled.div`
   flex-direction: column;
   gap: 20px;
   background: #ffffff;
-  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
   .project_image_stack_container {
@@ -121,7 +121,7 @@ export const ProjectCardContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 745px) {
+  @media screen and (max-width: 1045px) {
     .project_image_stack_container {
       .project_image_container {
         height: 100%;
