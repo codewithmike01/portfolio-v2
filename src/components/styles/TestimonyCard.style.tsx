@@ -45,7 +45,7 @@ export const TestimonyContainer = styled.section`
   }
 
   .card_text {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.65rem;
     text-align: center;
   }
