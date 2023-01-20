@@ -20,8 +20,11 @@ import { IoFastFood } from 'react-icons/io5';
 //-- Images
 
 import profile from '../../assets/images/test_image.jpg';
+import NuriLucka from '../../assets/images/nuri_lucka.png';
+import BenjaminSemah from '../../assets/images/BenjaminSemah.jpeg';
 import IkegbunamIjeoma from '../../assets/images/Ikegbunam_Ijeoma.jpg';
-import { FaBehanceSquare } from 'react-icons/fa'; //Behance icon
+import SamuelMomoh from '../../assets/images/SamuelMomoh.jpeg';
+import { FaBehanceSquare, FaGithubSquare } from 'react-icons/fa'; //Behance icon
 
 // Hobbie Data
 export const hobbies: {
@@ -126,23 +129,23 @@ export const testimonyData: {
 }[] = [
   {
     id: 1,
-    name: 'Jane Frankly',
-    image: `${profile}`,
-    profession: 'Designer',
-    icon: <FaBehanceSquare />,
+    name: 'Nuri Lacka',
+    image: `${NuriLucka}`,
+    profession: 'Developer',
+    icon: <FaGithubSquare />,
     testify:
-      'Mike is a dedicated colleague, a team player and , with the zeal to see the work through.',
-    link: 'https://github.com/Ginohmk',
+      'I have worked with Mike on different projects, his technical skills and & leadership skills were always impressive.',
+    link: 'https://github.com/Nuri1977',
   },
   {
     id: 2,
-    name: 'Bob Rosy',
-    image: `${profile}`,
-    profession: 'Designer',
-    icon: <FaBehanceSquare />,
+    name: 'Benjamin Semah',
+    image: `${BenjaminSemah}`,
+    profession: 'Developer',
+    icon: <FaGithubSquare />,
     testify:
-      'Mike is a dedicated colleague, a team player and , with the zeal to see the work through.',
-    link: 'https://github.com/Ginohmk',
+      'Mike is commited to excel at whatever he does, especially web development.',
+    link: 'https://github.com/BenjaminSemah',
   },
   {
     id: 3,
@@ -156,12 +159,12 @@ export const testimonyData: {
   },
   {
     id: 4,
-    name: 'Linko Juka',
-    image: `${profile}`,
-    profession: 'Designer',
-    icon: <FaBehanceSquare />,
+    name: 'Samuel Momoh',
+    image: `${SamuelMomoh}`,
+    profession: 'Developer',
+    icon: <FaGithubSquare />,
     testify:
       'Mike is a dedicated colleague, a team player and , with the zeal to see the work through.',
-    link: 'https://github.com/Ginohmk',
+    link: 'https://github.com/Samuel-Momoh',
   },
 ];
