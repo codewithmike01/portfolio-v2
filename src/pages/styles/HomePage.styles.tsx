@@ -14,7 +14,7 @@ export const HomePageContainer = styled.section`
   .hobbie_section {
     background-color: #000;
     color: #fff;
-    padding: 31px 0;
+    padding: 45px 0;
     width: 100%;
     display: flex;
     flex-direction: column;
