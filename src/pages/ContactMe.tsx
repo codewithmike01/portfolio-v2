@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ContactContainer } from './styles/ContactMe.styles';
 import BgButton from '../components/BgButton';
 import { useNavigate } from 'react-router-dom';
+import HelmetHead from '../components/HelmetHead';
 
 const ContactMe = () => {
   const [state, handleSubmit] = useForm('xrgvglrd');
@@ -15,29 +16,36 @@ const ContactMe = () => {
 
   if (state.succeeded) {
     return (
-      <div
-        className="email_res"
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '2rem',
-          alignItems: 'center',
-          justifyContent: 'center',
-          height: '100vh',
-          width: '90%',
-          margin: '0 auto',
-          textAlign: 'center',
-        }}
-      >
-        <p style={{ fontSize: '1.3rem' }}>
-          Thanks for reaching out, I will respond shortly!
-        </p>
-        <BgButton
-          text="Back to Home"
-          func={() => navigate('/')}
-          width="10rem"
+      <>
+        <HelmetHead
+          title="Contact RC"
+          description="Contact page for RC"
+          keywords="Contact page, Best Contact page, Contact kanu mike, contact RC, contact royal coder"
         />
-      </div>
+        <div
+          className="email_res"
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '2rem',
+            alignItems: 'center',
+            justifyContent: 'center',
+            height: '100vh',
+            width: '90%',
+            margin: '0 auto',
+            textAlign: 'center',
+          }}
+        >
+          <p style={{ fontSize: '1.3rem' }}>
+            Thanks for reaching out, I will respond shortly!
+          </p>
+          <BgButton
+            text="Back to Home"
+            func={() => navigate('/')}
+            width="10rem"
+          />
+        </div>
+      </>
     );
   }
   // const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -45,6 +53,11 @@ const ContactMe = () => {
   // };
   return (
     <>
+      <HelmetHead
+        title="Contact RC"
+        description="Contact page for RC"
+        keywords="Contact page, Best Contact page, Contact kanu mike, contact RC, contact royal coder"
+      />
       <NavBar />
 
       <ContactContainer>

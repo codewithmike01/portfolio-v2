@@ -11,11 +11,17 @@ import { AiOutlineDownload } from 'react-icons/ai';
 import Logo from '../assets/images/logo.svg';
 import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
+import HelmetHead from '../components/HelmetHead';
 
 const ResumePage: React.FC = () => {
   const navigate = useNavigate();
   return (
     <>
+      <HelmetHead
+        title="Resume - Summary"
+        description="Resume page for Kanu mike Chibundu known as Royal coder"
+        keywords="Frontend Engineer, Reactjs Developer, Typescript expert, Microverse fullstack, Kanu mike resume, Auchi polytechnic resume"
+      />
       <ResumePageContainer>
         <section className="resume_header_container">
           <div className="resume_header_wrapper">

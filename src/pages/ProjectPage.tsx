@@ -4,11 +4,17 @@ import ProjectCard from '../components/ProjectCard';
 import { ProjectPageContainer } from './styles/ProjectPage.styles';
 import { ProjectData } from './services/ProjectPage.service';
 import Footer from '../components/Footer';
+import HelmetHead from '../components/HelmetHead';
 
 const ProjectPage = () => {
   // const [projectSpec, setProjectSpec] = useState('frontend');
   return (
     <>
+      <HelmetHead
+        title="Projects"
+        description="This is project page of kanu mike chibundu Royal coder"
+        keywords="E-commerce Royal coder, Projects by Kanu mike Chibundu"
+      />
       <NavBar />
       <ProjectPageContainer>
         <h2>My Projects</h2>

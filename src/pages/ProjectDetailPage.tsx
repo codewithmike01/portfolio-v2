@@ -9,9 +9,15 @@ import { FiArrowUpRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import BgButton from '../components/BgButton';
 import Footer from '../components/Footer';
+import HelmetHead from '../components/HelmetHead';
 const ProjectDetailPage = () => {
   return (
     <>
+      <HelmetHead
+        title="Ecommerce project"
+        description="This is project page of kanu mike chibundu Royal coder"
+        keywords="E-commerce Royal coder, Projects by Kanu mike Chibundu"
+      />
       <NavBar />
       <ProjectPageDetailContainer>
         <div className="project_details_container">
