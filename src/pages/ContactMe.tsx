@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 
 import 'react-toastify/dist/ReactToastify.css';
 import { ContactContainer } from './styles/ContactMe.styles';
@@ -57,7 +57,6 @@ const ContactMe = () => {
               placeholder="John Deo"
               className="input_field"
             />
-            <ValidationError prefix="Name" field="name" errors={state.errors} />
           </div>
           <div className="input_field_container">
             <TextField
@@ -67,11 +66,6 @@ const ContactMe = () => {
               name="email"
               required
             />
-            <ValidationError
-              prefix="Email"
-              field="email"
-              errors={state.errors}
-            />
           </div>
           <div className="input_field_container">
             <textarea
@@ -79,11 +73,6 @@ const ContactMe = () => {
               className="textarea"
               name="message"
               required
-            />
-            <ValidationError
-              prefix="Message"
-              field="message"
-              errors={state.errors}
             />
           </div>
 

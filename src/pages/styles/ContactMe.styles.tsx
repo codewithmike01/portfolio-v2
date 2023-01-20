@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContactContainer = styled.section`
-  /* margin-top: 8rem; */
+  margin-top: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
