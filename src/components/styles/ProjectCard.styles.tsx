@@ -73,7 +73,7 @@ export const ProjectCardContainer = styled.div`
 
     p {
       text-align: start;
-      height: 50px;
+      /*height: 65px;*/
     }
     .project_button_container {
       align-self: center;
