@@ -45,7 +45,7 @@ export const HomePageContainer = styled.section`
       border: 1px solid rgba(0, 0, 0, 0.1);
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 8px;
-      width: 80%;
+      width: 70%;
       margin: 0 auto;
       margin-top: -57px;
       padding: 30px 20px;
@@ -90,6 +90,14 @@ export const HomePageContainer = styled.section`
 
     .react-multi-carousel-track {
       padding: 35px 0;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .skills_section {
+      .grid_skills_container {
+        width: 80%;
+      }
     }
   }
 `;
