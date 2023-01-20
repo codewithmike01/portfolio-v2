@@ -69,9 +69,11 @@ export const ProjectCardContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: relative;
 
     p {
       text-align: start;
+      height: 50px;
     }
     .project_button_container {
       align-self: center;
