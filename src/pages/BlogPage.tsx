@@ -9,7 +9,11 @@ const BlogPage = () => {
   const navigate = useNavigate();
   return (
     <>
-      <HelmetHead description="Hello" title="Blogger" />
+      <HelmetHead
+        description="Blog Post made by Royal Coder"
+        title="Posts"
+        keywords="post, Posts,  blog, Blog, technology posts"
+      />
       <NavBar />
       <BlogContiainer>
         <p>Blog posts in Progress, Coming Soon...</p>
