@@ -7,7 +7,6 @@ export const ContactContainer = styled.section`
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  height: 100vh;
 
   .form_contact {
     width: 80%;
