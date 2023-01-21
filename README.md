@@ -2,9 +2,9 @@
 
 This project showcases my MVP projects on a portfolio built with typescript
 
-### Live Link
+## Live Link
 
-[Live Link][https://portfolio-v2-wheat-tau.vercel.app/]
+[Live Link](https://portfolio-v2-wheat-tau.vercel.app/)
 
 ![image](https://user-images.githubusercontent.com/58771507/213883477-dd0afc17-8a89-4bc0-a0a9-1f140a49e9eb.png)
 
