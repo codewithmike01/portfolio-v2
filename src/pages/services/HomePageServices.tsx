@@ -19,7 +19,6 @@ import { IoFastFood } from 'react-icons/io5';
 // Testimony Import
 //-- Images
 
-import profile from '../../assets/images/test_image.jpg';
 import NuriLucka from '../../assets/images/nuri_lucka.png';
 import BenjaminSemah from '../../assets/images/BenjaminSemah.jpeg';
 import IkegbunamIjeoma from '../../assets/images/Ikegbunam_Ijeoma.jpg';
