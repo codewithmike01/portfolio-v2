@@ -61,8 +61,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Zuri HNG community
-
 ## 📝 License
 
 [This project is [MIT](https://github.com/Ginohmk/portfolio-v2/blob/dev/LICENSE) licensed.
