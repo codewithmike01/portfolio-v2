@@ -163,7 +163,7 @@ export const testimonyData: {
     profession: 'Developer',
     icon: <FaGithubSquare />,
     testify:
-      'Mike is a dedicated colleague, a team player and , with the zeal to see the work through.',
+      'Mike and I worked together on the Lectie projects, i a lucky to have him as my coworker, he consistently gave 100% effort to the team, and played a significant role in ensuring that we complete tasks on time.',
     link: 'https://github.com/Samuel-Momoh',
   },
 ];
