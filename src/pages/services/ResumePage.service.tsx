@@ -29,14 +29,14 @@ export const ResumeEducation: {
     eduName: 'AUCHI POLYTECHNIC, EDO STATE, NIGERIA.',
     year: 'Nov 2019 - Jun 2021',
     course: 'COMPUTER SCIENCE (HIGHER NATIONAL DIPLOMA)',
-    grade: 'DISTINCTION (3.70/4.0)',
+    grade: 'FIRST CLASS (3.70/4.0)',
   },
   {
     id: 4,
     eduName: 'IDAH POLYTECHNIC, KOGI STATE, NIGERIA.',
     year: 'Sep 2015 - Jun 2017',
     course: 'COMPUTER SCIENCE (NATIONAL DIPLOMA)',
-    grade: 'DISTINCTION (3.60/4.0)',
+    grade: 'FIRST CLASS (3.60/4.0)',
   },
 ];
 
