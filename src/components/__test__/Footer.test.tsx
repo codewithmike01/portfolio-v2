@@ -4,7 +4,7 @@ import Footer from '../Footer';
 
 afterAll(() => cleanup());
 
-describe('Footer Unit Test', () => {
+describe('Footer Component Test', () => {
   // Render Footer component
   it('trade Mark text present', () => {
     render(<Footer />);

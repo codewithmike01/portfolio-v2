@@ -20,7 +20,7 @@ const TestimonyCard: React.FC<TestimonyInterface> = ({
   profession,
 }) => {
   return (
-    <TestimonyContainer>
+    <TestimonyContainer key={id}>
       <div className="testimony_card_image">
         <img src={image} alt="profile" />
       </div>
