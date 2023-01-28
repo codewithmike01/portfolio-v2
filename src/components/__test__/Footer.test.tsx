@@ -2,7 +2,7 @@ import { screen, render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Footer from '../Footer';
 
-// afterAll(() => cleanup());
+afterAll(() => cleanup());
 
 describe('Footer Unit Test', () => {
   // Render Footer component
@@ -12,28 +12,38 @@ describe('Footer Unit Test', () => {
     expect(tradeMark).toBeInTheDocument();
   });
 
-  it('Link Elements to have length 5 and All href Link correct', () => {
+  it('Link Elements counts and Correct href', () => {
     render(<Footer />);
     const linkElements = screen.getAllByRole('link');
-    console.log(linkElements.length);
+
+    // Count link element
     expect(linkElements.length).toEqual(5);
 
+    // Github Link href
     expect(linkElements[0]).toHaveAttribute(
       'href',
       'https://github.com/Ginohmk'
     );
+
+    // LinkedIn Link href
     expect(linkElements[1]).toHaveAttribute(
       'href',
       'https://www.linkedin.com/in/mike-kanu-dev/'
     );
+
+    // Twitter Link href
     expect(linkElements[2]).toHaveAttribute(
       'href',
       'https://twitter.com/michotall95'
     );
+
+    // Facebook Link href
     expect(linkElements[3]).toHaveAttribute(
       'href',
       'https://web.facebook.com/mike.kanu/'
     );
+
+    // Instagram Link href
     expect(linkElements[4]).toHaveAttribute(
       'href',
       'https://www.instagram.com/savy_kanu_mike/'
