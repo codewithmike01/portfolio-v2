@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Hero from '../components/Hero';
@@ -13,9 +13,16 @@ import TestimonyCard from '../components/TestimonyCard';
 import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
 import HelmetHead from '../components/HelmetHead';
+import { scrollToTop } from '../utils/scrollToTop';
 
 const HomePage = () => {
   const navigate = useNavigate();
+
+  // On render scroll to top
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
   // Carousel Responsiveness
   const responsive = {
     superLargeDesktop: {

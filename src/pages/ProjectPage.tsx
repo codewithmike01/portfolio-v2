@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NavBar from '../components/NavBar';
 import ProjectCard from '../components/ProjectCard';
 import { ProjectPageContainer } from './styles/ProjectPage.styles';
 import { ProjectData } from './services/ProjectPage.service';
 import Footer from '../components/Footer';
 import HelmetHead from '../components/HelmetHead';
+import { scrollToTop } from '../utils/scrollToTop';
 
 const ProjectPage = () => {
   // const [projectSpec, setProjectSpec] = useState('frontend');
+
+  // On render scroll to top
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
   return (
     <>
       <HelmetHead

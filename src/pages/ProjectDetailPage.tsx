@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ProjectPageDetailContainer } from './styles/ProjectPDetailPage.style';
 import NavBar from '../components/NavBar';
 import ProjectPicture from '../assets/images/test_project1.png';
@@ -10,7 +10,13 @@ import { Link } from 'react-router-dom';
 import BgButton from '../components/BgButton';
 import Footer from '../components/Footer';
 import HelmetHead from '../components/HelmetHead';
+import { scrollToTop } from '../utils/scrollToTop';
 const ProjectDetailPage = () => {
+  // On render scroll to top
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
   return (
     <>
       <HelmetHead

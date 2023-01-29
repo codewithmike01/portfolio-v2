@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NavBar from '../components/NavBar';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -9,10 +9,16 @@ import { ContactContainer } from './styles/ContactMe.styles';
 import BgButton from '../components/BgButton';
 import { useNavigate } from 'react-router-dom';
 import HelmetHead from '../components/HelmetHead';
+import { scrollToTop } from '../utils/scrollToTop';
 
 const ContactMe = () => {
   const [state, handleSubmit] = useForm('xrgvglrd');
   const navigate = useNavigate();
+
+  // On render scroll to top
+  useEffect(() => {
+    scrollToTop();
+  }, []);
 
   if (state.succeeded) {
     return (

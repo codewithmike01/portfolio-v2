@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Carousel from 'nuka-carousel';
 import {
   Certificate,
@@ -12,9 +12,16 @@ import Logo from '../assets/images/logo.svg';
 import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
 import HelmetHead from '../components/HelmetHead';
+import { scrollToTop } from '../utils/scrollToTop';
 
 const ResumePage: React.FC = () => {
   const navigate = useNavigate();
+
+  // On render scroll to top
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
   return (
     <>
       <HelmetHead
