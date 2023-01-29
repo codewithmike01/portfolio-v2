@@ -14,13 +14,16 @@ export const HeroContainer = styled.section`
     left: 100%;
 
     animation: floatLeft 1s ease-in-out forwards;
+    transition: left 1s ease-in-out;
 
     @keyframes floatLeft {
       0% {
         left: 100%;
       }
-
       50% {
+        left: 75%;
+      }
+      75% {
         left: 50%;
       }
       100% {
@@ -42,9 +45,9 @@ export const HeroContainer = styled.section`
       letter-spacing: 1.5px;
       word-spacing: 1px;
       transform: scale(0);
-      transition: transform 1s ease-in-out;
 
       animation: scaleIn 1s ease-in-out forwards;
+      transition: transform 1s ease-in-out;
 
       @keyframes scaleIn {
         0% {
@@ -69,12 +72,16 @@ export const HeroContainer = styled.section`
     right: 100%;
 
     animation: floatRight 1s ease-in-out forwards;
+    transition: right 1s ease-in-out;
 
     @keyframes floatRight {
       0% {
         right: 100%;
       }
       50% {
+        right: 75%;
+      }
+      75% {
         right: 50%;
       }
       100% {
