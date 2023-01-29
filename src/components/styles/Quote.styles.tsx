@@ -18,6 +18,18 @@ export const QuoteContainer = styled.section`
     text-align: center;
     font-size: 1.5rem;
     line-height: 40px;
+    transform: scale(0);
+    animation: fadeIn 0.75s ease-in-out forwards;
+
+    @keyframes fadeIn {
+      0% {
+        transform: scale(0);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
   }
 
   button {

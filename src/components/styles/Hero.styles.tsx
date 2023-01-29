@@ -20,12 +20,7 @@ export const HeroContainer = styled.section`
       0% {
         left: 100%;
       }
-      50% {
-        left: 75%;
-      }
-      75% {
-        left: 50%;
-      }
+
       100% {
         left: 0%;
       }
@@ -53,12 +48,7 @@ export const HeroContainer = styled.section`
         0% {
           transform: scale(0);
         }
-        50% {
-          transform: scale(0.5);
-        }
-        75% {
-          transform: scale(0.75);
-        }
+
         100% {
           transform: scale(1);
         }
@@ -78,12 +68,7 @@ export const HeroContainer = styled.section`
       0% {
         right: 100%;
       }
-      50% {
-        right: 75%;
-      }
-      75% {
-        right: 50%;
-      }
+
       100% {
         right: 0%;
       }
