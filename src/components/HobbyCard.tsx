@@ -15,7 +15,7 @@ const HobbyCard: React.FC<HobbyInteface> = ({
   icon,
 }): ReactElement => {
   return (
-    <HobbyContainer key={id}>
+    <HobbyContainer key={id} data-testid="hobby__main">
       <div className="hobby_heading">
         <div className="hobby_heading_wrap">
           <h4>{hobby}</h4>
