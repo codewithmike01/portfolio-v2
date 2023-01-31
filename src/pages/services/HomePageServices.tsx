@@ -133,7 +133,7 @@ export const testimonyData: {
     profession: 'Developer',
     icon: <FaGithubSquare />,
     testify:
-      'I have worked with Mike on different projects, his technical skills and & leadership skills were always impressive.',
+      'I have worked with Mike on different projects, his technical skills & leadership skills were always impressive.',
     link: 'https://github.com/Nuri1977',
   },
   {

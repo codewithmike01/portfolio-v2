@@ -28,7 +28,7 @@ const QuoteCard = () => {
   return (
     <QuoteContainer key={quotes.id}>
       <div className="quote_wrapper">
-        <p>“{quotes.content}”</p>
+        <p data-testid="quote__content">“{quotes.content}”</p>
         <p className="author_name">Author: {quotes.author}</p>
       </div>
       <BorderButton width="10rem" text="Generate Quote" func={handleQuote} />
