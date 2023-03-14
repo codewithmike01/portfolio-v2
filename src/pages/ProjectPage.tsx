@@ -26,24 +26,7 @@ const ProjectPage = () => {
       <ProjectPageContainer>
         <h2>My Projects</h2>
 
-        <section className="project_spec_container">
-          {/* Under Cosideration when becoame fullstack */}
-          {/* <div
-            className={`project_spec ${projectSpec === 'frontend' ? 'bg' : ''}`}
-            onClick={() => setProjectSpec('frontend')}
-          >
-            <p>Frontend</p>
-          </div>
-
-          <div
-            className={`project_spec ${
-              projectSpec === 'fullstack' ? 'bg' : ''
-            }`}
-            onClick={() => setProjectSpec('fullstack')}
-          >
-            <p>Fullstack</p>
-          </div> */}
-        </section>
+       
 
         <section className="project_card_container">
           {ProjectData.map(
