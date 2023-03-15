@@ -140,7 +140,7 @@ const ProjectDetailPage = () => {
                   <SiBuymeacoffee />
                 </a>
                 <a
-                  href="https://www.buymeacoffee.com/kanumikech0"
+                  href={viewLink}
                   target="_blank"
                   className="visit_link_btn"
                   rel="noreferrer"
