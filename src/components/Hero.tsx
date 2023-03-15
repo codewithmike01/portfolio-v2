@@ -9,7 +9,10 @@ const Hero = () => {
   return (
     <HeroContainer>
       <div className="hero_wrapper">
-        <h2>HEY, I'M KANU MIKE CHIBUNDU</h2>
+        <h2>
+          <span>HEY THERE 👋,</span>
+          <span>I'M KANU MIKE CHIBUNDU</span>
+        </h2>
         <p data-testid="description">
           A graduate of computer science, who has sold his soul to software
           development. I have over 2 years experience as a Front-end developer,

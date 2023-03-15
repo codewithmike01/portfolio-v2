@@ -10,6 +10,10 @@ export const HeroContainer = styled.section`
   margin-top: 10rem;
 
   h2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
     position: relative;
     left: 100%;
 
