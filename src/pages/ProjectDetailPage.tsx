@@ -11,6 +11,16 @@ import Footer from '../components/Footer';
 import HelmetHead from '../components/HelmetHead';
 import { scrollToTop } from '../utils/scrollToTop';
 import { ProjectDetails } from './services/ProjectPage.service';
+
+const metaProjectData: {
+  id: number;
+  title: string;
+}[] = [
+  {
+    id: 1,
+    title: 'Itatatat',
+  },
+];
 const ProjectDetailPage = () => {
   const params = useParams<string>();
 
@@ -19,12 +29,15 @@ const ProjectDetailPage = () => {
     scrollToTop();
   }, []);
 
+  let test = metaProjectData[1]?.title;
+  console.log('Testhere ', test);
+
   return (
     <>
       <HelmetHead
-        title="Ecommerce project"
-        description="This is project page of kanu mike chibundu Royal coder"
-        keywords="E-commerce Royal coder, Projects by Kanu mike Chibundu"
+        title={ProjectDetails[0]?.title}
+        description={ProjectDetails[0]?.description}
+        keywords={`${ProjectDetails[0]?.title} Royal coder, Renewable energy, Solar Panel, inverter installation`}
       />
       <NavBar />
       <ProjectPageDetailContainer>
@@ -40,7 +53,6 @@ const ProjectDetailPage = () => {
             solution,
             presentFeatures,
             futureFeatures,
-            description,
             viewLink,
           }) => (
             <>
