@@ -24,7 +24,7 @@ const HomePage = () => {
   return (
     <>
       <HelmetHead
-        title="RC - Home"
+        title="RCM - Home"
         description="This website is a porfolio website for Kanu Mike Chibundu aka RoyalCode, a programmer who has sold his soul to web development and is dedicaed to improve the system"
         keywords="Web developer, kanu mike chibundu, Mike, Royal Code"
       />
