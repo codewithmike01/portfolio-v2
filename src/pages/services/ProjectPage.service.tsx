@@ -42,11 +42,11 @@ export const ProjectDetails: {
     image: `${ItaronisProject}`,
     tools: ['Reactjs', 'Typescript', 'firebase', 'Figma'],
     problem:
-      'Itaronis has no online presence and finds it difficult to react customers globally, with thier product and services.',
+      'Itaronis has no online presence and finds it difficult to reach customers globally, with their product and services.',
     solution:
-      'Creation of a website for showcases the itaronis brand, services and products, with MVP features to capture early stage users, with keen obervation in optimizing website performance and detailed SEO, to increase global reach of user.',
+      'Creation of a website to showcase the itaronis brand, services, and products, with MVP features to capture early-stage users, with keen observations in optimizing website performance and detailed SEO, to increase the global reach of user.',
     challenges:
-      'Challenge i faced in building this product was with integration of firebase, and the underlining logic in switching between firebase storage and database to effciently store the website data, i had to take my time to ensure it is maintainable, the overall experience of overcoming this challenge is fullfilling.',
+      'The challenge I faced in building this product was with the integration of firebase, and the underlining logic in switching between firebase storage and database to efficiently store the website data, I had to take my time to ensure it is maintainable, the overall experience of overcoming this challenge is fulfilling.',
     presentFeatures: [
       'Language Translation in three languages.',
       'Admin Authenticaion.',
