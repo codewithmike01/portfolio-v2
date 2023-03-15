@@ -36,6 +36,7 @@ export const QuoteContainer = styled.section`
     position: absolute;
     bottom: 10px;
     margin-right: 2rem;
+    font-size: 1rem;
   }
 
   .author_name {
