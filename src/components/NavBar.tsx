@@ -25,7 +25,7 @@ const NavBar: React.FC = () => {
         <div className="nav_links_container">
           <div className="nav_links">
             <NavLink to="/project" style={handleActiveLink}>
-              Project
+              Projects
             </NavLink>
             <NavLink to="/blog" style={handleActiveLink}>
               Blog

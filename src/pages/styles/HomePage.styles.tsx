@@ -77,9 +77,8 @@ export const HomePageContainer = styled.section`
 
     .testimony_container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      grid-gap: 1.3rem;
-      grid-row-gap: 3rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 1.7rem;
     }
 
     .react-multiple-carousel__arrow--left,

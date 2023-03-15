@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const TestimonyContainer = styled.section`
-  height: 100%;
+  /* width: 300px; */
+
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -10,7 +11,7 @@ export const TestimonyContainer = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 30px 10px 0 10px;
+  padding: 30px 10px 10px 10px;
 
   .testimony_card_image {
     width: 100px;
@@ -50,7 +51,7 @@ export const TestimonyContainer = styled.section`
   }
 
   @media screen and (max-width: 800px) {
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
   }
 `;
