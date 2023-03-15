@@ -26,8 +26,6 @@ const ProjectPage = () => {
       <ProjectPageContainer>
         <h2>My Projects</h2>
 
-       
-
         <section className="project_card_container">
           {ProjectData.map(
             ({ id, title, description, viewLink, image, stack }) => (

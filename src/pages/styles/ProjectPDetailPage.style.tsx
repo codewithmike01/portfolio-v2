@@ -17,7 +17,7 @@ export const ProjectPageDetailContainer = styled.section`
     img {
       width: 100%;
       height: 100%;
-      image-rendering: crisp-edges;
+      /* image-rendering: crisp-edges; */
     }
   }
 
@@ -34,6 +34,20 @@ export const ProjectPageDetailContainer = styled.section`
       display: flex;
       flex-direction: column;
       gap: 15px;
+    }
+
+    .collabo {
+      .collab_list {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        svg {
+          font-size: 1.5rem;
+          color: var(--primary-bg);
+          opacity: 0.8;
+        }
+      }
     }
     .project_detail_skill {
       .contact_me {
