@@ -34,7 +34,7 @@ const ResumePage: React.FC = () => {
           <div className="resume_header_wrapper">
             <div className="logo_image" onClick={() => navigate('/')}>
               <img src={Logo} alt="logo" />
-              <h3>RoyalStack</h3>
+              <h3>RCM</h3>
             </div>
             <div className="download_wraper desktop">
               <a
