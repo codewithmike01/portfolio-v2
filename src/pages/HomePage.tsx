@@ -89,7 +89,7 @@ const HomePage = () => {
 
         <section className="testimony_section">
           <h2>TESTIMONIES</h2>
-          <Carousel responsive={responsive} infinite={true}>
+          <div className="testimony_container">
             {testimonyData.map(
               ({ id, name, image, icon, link, profession, testify }) => (
                 <TestimonyCard
@@ -103,7 +103,7 @@ const HomePage = () => {
                 />
               )
             )}
-          </Carousel>
+          </div>
         </section>
 
         <Footer />

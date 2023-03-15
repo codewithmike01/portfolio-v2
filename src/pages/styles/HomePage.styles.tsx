@@ -75,6 +75,13 @@ export const HomePageContainer = styled.section`
     flex-direction: column;
     gap: 64px;
 
+    .testimony_container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-gap: 1.3rem;
+      grid-row-gap: 3rem;
+    }
+
     .react-multiple-carousel__arrow--left,
     .react-multiple-carousel__arrow--right {
       background: rgba(23, 74, 255, 0.8);

@@ -128,26 +128,6 @@ export const testimonyData: {
 }[] = [
   {
     id: 1,
-    name: 'Nuri Lacka',
-    image: `${NuriLucka}`,
-    profession: 'Developer',
-    icon: <FaGithubSquare />,
-    testify:
-      'I have worked with Mike on different projects, his technical skills & leadership skills were always impressive.',
-    link: 'https://github.com/Nuri1977',
-  },
-  {
-    id: 2,
-    name: 'Benjamin Semah',
-    image: `${BenjaminSemah}`,
-    profession: 'Developer',
-    icon: <FaGithubSquare />,
-    testify:
-      'Mike is commited to excel at whatever he does, especially web development.',
-    link: 'https://github.com/BenjaminSemah',
-  },
-  {
-    id: 3,
     name: 'Ikegbunam Ijeoma',
     image: `${IkegbunamIjeoma}`,
     profession: 'Designer',
@@ -156,6 +136,29 @@ export const testimonyData: {
       'I had the opportunity working with mike on a group project of 7 members, I notice he has a proven knowledge of web development and works well with a team.',
     link: 'https://www.behance.net/ikegbunamijeoma/projects',
   },
+
+  {
+    id: 2,
+    name: 'Nuri Lacka',
+    image: `${NuriLucka}`,
+    profession: 'Developer',
+    icon: <FaGithubSquare />,
+    testify:
+      'I have worked with Mike on different projects, his technical skills & leadership skills were always impressive.',
+    link: 'https://github.com/Nuri1977',
+  },
+
+  {
+    id: 3,
+    name: 'Benjamin Semah',
+    image: `${BenjaminSemah}`,
+    profession: 'Developer',
+    icon: <FaGithubSquare />,
+    testify:
+      'Mike is commited to excel at whatever he does, especially web development.',
+    link: 'https://github.com/BenjaminSemah',
+  },
+
   {
     id: 4,
     name: 'Samuel Momoh',
