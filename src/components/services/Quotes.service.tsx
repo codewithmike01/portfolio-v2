@@ -2,7 +2,8 @@
 export const quoteData: { quote: string; author: string; id: number }[] = [
   {
     id: 1,
-    quote: `Any fool can write code that a computer can understand. Good programmers write code that humans can understand.`,
+    quote: `Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away.`,
+
     author: 'Martin Fowler',
   },
   {
@@ -12,7 +13,7 @@ export const quoteData: { quote: string; author: string; id: number }[] = [
   },
   {
     id: 3,
-    quote: `Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away.`,
+    quote: `Any fool can write code that a computer can understand. Good programmers write code that humans can understand.`,
     author: 'Antoine de Saint-Exupery',
   },
   {
