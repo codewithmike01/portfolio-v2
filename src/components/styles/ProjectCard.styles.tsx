@@ -18,13 +18,12 @@ export const ProjectCardContainer = styled.div`
     .project_image_container {
       border-radius: 4px;
       width: 274px;
-      height: 200px;
+
       img {
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
           rgba(0, 0, 0, 0.23) 0px 3px 6px;
         /* border: 1px solid rgba(23, 74, 255, 0.5); */
         width: 100%;
-        height: 100%;
         image-rendering: crisp-edges;
       }
     }

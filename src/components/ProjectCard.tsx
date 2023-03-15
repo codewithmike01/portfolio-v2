@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardInterface> = ({
     <ProjectCardContainer>
       <div className="project_image_stack_container">
         <div className="project_image_container">
-          <img src={image} alt="Apply for me project" />
+          <img src={image} alt={title} />
         </div>
 
         <div className="project_title_stack_container">
