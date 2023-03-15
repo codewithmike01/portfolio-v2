@@ -11,7 +11,7 @@ export const ProjectData: {
 }[] = [
   {
     id: 1,
-    description: `Itaronis Limited website is a for installation, maintainace, sales and supply of a solar renewable energy equipments.`,
+    description: `This is a website used to showcase the company’s brand, products, and services to a global market, it includes an admin privilege, where CRUD operations are performed to populate the gallery and product page.`,
     title: 'Itaronis Limited',
     viewLink: 'https://www.itaronisltd.com/',
     image: `${ItaronisProject}`,

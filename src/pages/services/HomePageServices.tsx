@@ -166,7 +166,7 @@ export const testimonyData: {
     profession: 'Developer',
     icon: <FaGithubSquare />,
     testify:
-      'Mike and I worked together on the Lectie projects, i a lucky to have him as my coworker, he consistently gave 100% effort to the team, and played a significant role in ensuring that we complete tasks on time.',
+      'Mike and I worked together on the Lectie projects, i am lucky to have him as my coworker, he consistently gave 100% effort to the team, and played a significant role in ensuring that we complete tasks on time.',
     link: 'https://github.com/Samuel-Momoh',
   },
 ];
