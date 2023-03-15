@@ -28,6 +28,7 @@ export const ProjectPageContainer = styled.section`
       display: flex;
       align-items: center;
       justify-content: center;
+
       box-shadow: 0px 2px 4px 2px rgba(23, 74, 255, 0.25);
       border-radius: 8px;
       padding: 10px;

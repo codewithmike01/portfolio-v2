@@ -12,7 +12,6 @@ export const ProjectPageDetailContainer = styled.section`
 
   .project_details_container {
     width: 90%;
-
     margin: 0 auto;
     img {
       width: 100%;
