@@ -16,7 +16,7 @@ export const ProjectPageDetailContainer = styled.section`
     img {
       width: 100%;
       height: 100%;
-      /* image-rendering: crisp-edges; */
+      image-rendering: crisp-edges;
     }
   }
 
@@ -46,10 +46,18 @@ export const ProjectPageDetailContainer = styled.section`
           color: var(--primary-bg);
           opacity: 0.8;
         }
+
+        .collab_link {
+          color: var(--primary-bg);
+          text-decoration: none;
+          font-weight: 500;
+        }
       }
     }
     .project_detail_skill {
       .contact_me {
+        max-width: 12rem;
+        width: 100%;
         a {
           color: var(--primary-bg);
           text-decoration: underline 2px var(--primary-bg);
@@ -101,6 +109,9 @@ export const ProjectPageDetailContainer = styled.section`
           display: flex;
           align-items: center;
           gap: 20px;
+          p {
+            width: 80%;
+          }
           svg {
             font-size: 1.5rem;
             color: var(--primary-bg);
@@ -117,7 +128,8 @@ export const ProjectPageDetailContainer = styled.section`
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    width: 70%;
+    max-width: 950px;
+    width: 90%;
     margin: 0 auto;
 
     .buy_coffee {
@@ -133,6 +145,23 @@ export const ProjectPageDetailContainer = styled.section`
       padding: 15px 24px;
       border-radius: 8px;
       border: 1px solid var(--primary-bg);
+      text-decoration: none;
+    }
+
+    .visit_link_btn {
+      max-width: 10rem;
+      width: 100%;
+      margin: 0 auto;
+      background-color: var(--primary-bg);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 24px;
+      border-radius: 8px;
+      border: 1px solid var(--primary-bg);
+      cursor: pointer;
       text-decoration: none;
     }
   }

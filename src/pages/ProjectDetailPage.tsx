@@ -6,21 +6,11 @@ import { GrMail } from 'react-icons/gr';
 import { SiBuymeacoffee } from 'react-icons/si';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { Link, useParams } from 'react-router-dom';
-import BgButton from '../components/BgButton';
 import Footer from '../components/Footer';
 import HelmetHead from '../components/HelmetHead';
 import { scrollToTop } from '../utils/scrollToTop';
 import { ProjectDetails } from './services/ProjectPage.service';
 
-const metaProjectData: {
-  id: number;
-  title: string;
-}[] = [
-  {
-    id: 1,
-    title: 'Itatatat',
-  },
-];
 const ProjectDetailPage = () => {
   const params = useParams<string>();
 
@@ -29,13 +19,10 @@ const ProjectDetailPage = () => {
     scrollToTop();
   }, []);
 
-  let test = metaProjectData[1]?.title;
-  console.log('Testhere ', test);
-
   return (
     <>
       <HelmetHead
-        title={ProjectDetails[0]?.title}
+        title={ProjectDetails[0]?.title + ' Project'}
         description={ProjectDetails[0]?.description}
         keywords={`${ProjectDetails[0]?.title} Royal coder, Renewable energy, Solar Panel, inverter installation`}
       />
@@ -80,9 +67,17 @@ const ProjectDetailPage = () => {
                       : 'Collaborator:'}{' '}
                   </h4>
 
-                  {collaborators.map(({ id, start, link }) => (
+                  {collaborators.map(({ id, start, link, name }) => (
                     <div className="collab_list sub_content" key={id}>
                       <GiConfirmed /> <p>{start}</p>
+                      <a
+                        href={link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="collab_link"
+                      >
+                        {name}
+                      </a>
                     </div>
                   ))}
                 </div>
@@ -144,11 +139,16 @@ const ProjectDetailPage = () => {
                   <p>Buy me a coffee</p>
                   <SiBuymeacoffee />
                 </a>
-                <BgButton
-                  text="View Live"
-                  icon={<FiArrowUpRight />}
-                  width="10rem"
-                />
+                <a
+                  href="https://www.buymeacoffee.com/kanumikech0"
+                  target="_blank"
+                  className="visit_link_btn"
+                  rel="noreferrer"
+                >
+                  {' '}
+                  <p>View Live</p>
+                  <FiArrowUpRight />
+                </a>
               </section>
             </>
           )

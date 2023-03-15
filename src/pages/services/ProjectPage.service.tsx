@@ -32,7 +32,7 @@ export const ProjectDetails: {
   challenges: string;
   presentFeatures: string[];
   futureFeatures: string[];
-  collaborators: { id: number; start: string; link: string }[];
+  collaborators: { id: number; start: string; link: string; name: string }[];
 }[] = [
   {
     id: 1,
@@ -62,6 +62,13 @@ export const ProjectDetails: {
       'Tracking of delivery products.',
       'Cart and checkout functionalities.',
     ],
-    collaborators: [{ id: 1, start: 'Figma design By', link: '' }],
+    collaborators: [
+      {
+        id: 1,
+        start: 'Figma design By',
+        link: 'https://www.linkedin.com/in/ijeoma-ikegbunam/',
+        name: 'Ijeoma Ikegbunam.',
+      },
+    ],
   },
 ];
