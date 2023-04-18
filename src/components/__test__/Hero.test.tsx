@@ -21,7 +21,9 @@ describe('Hero Section Test', () => {
 
     const headingElement = screen.getByRole('heading');
 
-    expect(headingElement.textContent).toBe("HEY, I'M KANU MIKE CHIBUNDU");
+    expect(headingElement.textContent).toBe(
+      "HEY THERE 👋,I'M KANU MIKE CHIBUNDU"
+    );
   });
 
   it('Decription should be present', () => {

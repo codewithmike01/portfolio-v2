@@ -8,7 +8,7 @@ describe('Footer Component Test', () => {
   // Render Footer component
   it('trade Mark text present', () => {
     render(<Footer />);
-    const tradeMark = screen.getByText('Powered by Royal Stack');
+    const tradeMark = screen.getByText('Powered by Royal Code Mate');
     expect(tradeMark).toBeInTheDocument();
   });
 
