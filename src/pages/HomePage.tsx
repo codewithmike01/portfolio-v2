@@ -32,6 +32,8 @@ const HomePage = () => {
         <NavBar />
         <Hero />
         <QuoteCard />
+
+        {/* --- Hobby Section --- */}
         <section className="hobbie_section">
           <h2>HOBBIES</h2>
           <div className="grid_hobbies">
@@ -47,6 +49,7 @@ const HomePage = () => {
           </div>
         </section>
 
+        {/* --- Skill Section --- */}
         <section className="skills_section">
           <h2 className="skills_section_header ">My Current Skills</h2>
 
@@ -65,6 +68,7 @@ const HomePage = () => {
           </div>
         </section>
 
+        {/* --- Testimony Section ---- */}
         <section className="testimony_section">
           <h2>TESTIMONIES</h2>
           <div className="testimony_container">
