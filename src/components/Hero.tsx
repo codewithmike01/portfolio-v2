@@ -25,7 +25,7 @@ const Hero = () => {
         text="See My Projects"
         width="10rem"
         icon={<FiArrowUpRight />}
-        func={() => navigate('/project')}
+        func={() => navigate('/projects')}
       />
     </HeroContainer>
   );

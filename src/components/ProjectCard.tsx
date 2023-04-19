@@ -54,7 +54,7 @@ const ProjectCard: React.FC<ProjectCardInterface> = ({
             text="Usecase"
             icon={<FiArrowUpRight />}
             width="6rem"
-            func={() => navigate(`/project/${id}`)}
+            func={() => navigate(`/projects/${id}`)}
           />
         </div>
       </div>
