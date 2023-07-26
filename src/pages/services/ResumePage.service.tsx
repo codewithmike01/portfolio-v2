@@ -4,6 +4,7 @@ import MicroverseFullStack from '../../assets/images/fullstack_microverse.png';
 import MicroverseJavascript from '../../assets/images/javascript_microverse.png';
 import AlxFullstack from '../../assets/images/fullstack_alx.png';
 import Oracle from '../../assets/images/oracle.jpg';
+import React from '../../assets/images/React_Redux.png';
 
 export const ResumeEducation: {
   id: number;
@@ -48,19 +49,19 @@ export const ResumeExperience: {
 }[] = [
   {
     id: 1,
-    companyName: 'Software Engineer Fellow (Armada open source)',
+    companyName: 'MLH FELLOW (Armada OPEN SOURCE, REMOTE INTERNSHIP)',
     year: 'May 2023 - Present',
-    position: 'FRONTEND WEB DEVELOPER (Internship)',
+    position: 'FRONTEND WEB DEVELOPER',
   },
   {
     id: 2,
-    companyName: 'LECTIE',
+    companyName: 'LECTIE (REMOTE)',
     year: 'Aug 2022 - Present',
     position: 'FRONTEND WEB DEVELOPER',
   },
   {
     id: 3,
-    companyName: 'HNG (REMOTE INTERSHIP)',
+    companyName: 'HNG (REMOTE INTERNSHIP)',
     year: 'Sep 2022 - Nov 2022',
     position: 'FRONTEND WEB DEVELOPER',
   },
@@ -85,10 +86,14 @@ export const Certificate: {
   },
   {
     id: 3,
-    image: `${AlxFullstack}`,
+    image: `${React}`,
   },
   {
     id: 4,
+    image: `${AlxFullstack}`,
+  },
+  {
+    id: 5,
     image: `${Oracle}`,
   },
 ];
