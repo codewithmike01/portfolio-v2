@@ -48,18 +48,24 @@ export const ResumeExperience: {
 }[] = [
   {
     id: 1,
+    companyName: 'Software Engineer Fellow (Armada open source)',
+    year: 'May 2023 - Present',
+    position: 'FRONTEND WEB DEVELOPER (Internship)',
+  },
+  {
+    id: 2,
     companyName: 'LECTIE',
     year: 'Aug 2022 - Present',
     position: 'FRONTEND WEB DEVELOPER',
   },
   {
-    id: 2,
+    id: 3,
     companyName: 'HNG (REMOTE INTERSHIP)',
     year: 'Sep 2022 - Nov 2022',
     position: 'FRONTEND WEB DEVELOPER',
   },
   {
-    id: 3,
+    id: 4,
     companyName: 'MICROVERSE (REMOTE)',
     year: 'May 2022 - Dec 2022',
     position: 'CODE REVIEWER',
