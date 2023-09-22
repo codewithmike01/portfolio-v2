@@ -6,6 +6,7 @@ import AlxFullstack from '../../assets/images/fullstack_alx.png';
 import Oracle from '../../assets/images/oracle.jpg';
 import React from '../../assets/images/React_Redux.png';
 
+// Education
 export const ResumeEducation: {
   id: number;
   eduName: string;
@@ -41,6 +42,7 @@ export const ResumeEducation: {
   },
 ];
 
+// resume Data
 export const ResumeExperience: {
   id: number;
   companyName: string;
@@ -72,6 +74,8 @@ export const ResumeExperience: {
     position: 'CODE REVIEWER',
   },
 ];
+
+// Certificate Data
 export const Certificate: {
   id: number;
   image: string;
