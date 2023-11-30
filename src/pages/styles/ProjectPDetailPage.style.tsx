@@ -56,8 +56,9 @@ export const ProjectPageDetailContainer = styled.section`
     }
     .project_detail_skill {
       .contact_me {
-        max-width: 12rem;
+        max-width: 17rem;
         width: 100%;
+
         a {
           color: var(--primary-bg);
           text-decoration: underline 2px var(--primary-bg);
@@ -134,7 +135,7 @@ export const ProjectPageDetailContainer = styled.section`
 
     .buy_coffee {
       cursor: pointer;
-      width: 10rem;
+      max-width: 12rem;
       margin: 0 auto;
       background-color: transparent;
       color: var(--primary-text);

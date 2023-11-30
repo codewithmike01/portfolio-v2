@@ -1,4 +1,5 @@
 import ItaronisProject from '../../assets/images/itaromis_project.png';
+import ShopifyAdmin from '../../assets/images/ShopifyAdmin.png';
 
 // Project Card Data
 export const ProjectData: {
@@ -11,11 +12,21 @@ export const ProjectData: {
 }[] = [
   {
     id: 1,
-    description: `This is a website used to showcase the company’s brand, products, and services to a global market, it includes an admin privilege, where CRUD operations are performed to populate the gallery and product page.`,
+    description: `As the curator of this website, my aim is to spotlight the company's brand, products, and services on a global stage. With exclusive admin privileges, I orchestrate CRUD operations to dynamically populate the gallery and product page,
+     ensuring a dynamic and compelling showcase.`,
     title: 'Itaronis Limited',
     viewLink: 'https://www.itaronisltd.com/',
     image: `${ItaronisProject}`,
     stack: ['Reactjs', 'Typescript', 'Jest', 'Figma'],
+  },
+  {
+    id: 2,
+    description: `In recreating the Shopify admin website,
+    I've put a spotlight on user accessibility. My focus is on ensuring usability for everyone, encompassing keyboard and screen users for an engaging and inclusive web experience.`,
+    title: 'Clone of Shopify Admin',
+    viewLink: 'https://kanu-crushing-it-hackerton.vercel.app/',
+    image: `${ShopifyAdmin}`,
+    stack: ['Html', 'Css', 'Javascript'],
   },
 ];
 
@@ -68,6 +79,44 @@ export const ProjectDetails: {
         start: 'Figma design By',
         link: 'https://www.linkedin.com/in/ijeoma-ikegbunam/',
         name: 'Ijeoma Ikegbunam.',
+      },
+    ],
+  },
+
+  {
+    id: 2,
+    description: `Explore  Shopify Admin website—a dynamic hub for effortless business management. Our intuitive interface and powerful features empower you to oversee your store with precision. Streamline product management, order processing, and customer interactions seamlessly. Step into the future of e-commerce administration with our user-friendly platform, where efficiency meets innovation.`,
+    title: 'Clone of Shopify Admin',
+    viewLink: 'https://kanu-crushing-it-hackerton.vercel.app/',
+    image: `${ShopifyAdmin}`,
+    tools: ['Html', 'Css', 'Javascript', 'Figma'],
+    problem:
+      'Exploring the accessibility features of the Shopify admin website to gain hands-on experience with accessibility.',
+    solution:
+      'Enabling users to follow the setup steps while configuring their website.',
+    challenges:
+      'Addressing keyboard accessibility posed a slight challenge, aiming to ensure that most HTML elements are focusable.',
+    presentFeatures: [
+      'Clicking on the Shopify icon in the top bar redirects the merchant to the Shopify landing page at shopify.com.',
+      'When focusing on the search box, merchants can freely type without triggering further actions or results; typing is the only permitted action.',
+      'Admin privilege: Add and Delete gallery images and sales and supply products.',
+      'Clicking on the notification bell reveals an empty notifications dropdown; clicking again closes the dropdown.',
+      'Selecting the store name or profile image displays a menu as per Figma design; clicking again closes the menu. Choosing any menu item redirects to admin.shopify.com.',
+      'Clicking the "Select plan" link directs the merchant to the Shopify pricing page at shopify.com/pricing.',
+      'Clicking the dismiss button on the trial callout immediately removes it from the page.',
+      `Clicking the "Arrow Up" icon on the Setup guide card's top right closes and reopens the card upon subsequent clicks.`,
+      'Clicking on any of the 5 onboarding steps expands the panel and shows its content, closing any previously opened steps. Clicking an opened step has no effect.',
+      'Clicking the empty circle checkbox on the left side of an onboarding step title marks it as completed, expanding the next incomplete step. Clicking again marks it as incomplete, updating the onboarding progress bar accordingly.',
+    ],
+    futureFeatures: [
+      'Enhanced user accessibility results in improved performance.',
+    ],
+    collaborators: [
+      {
+        id: 1,
+        start: 'Figma design By',
+        link: 'https://twitter.com/bahdcoder/',
+        name: 'Frantz Kati',
       },
     ],
   },
