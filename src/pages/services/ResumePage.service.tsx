@@ -51,16 +51,17 @@ export const ResumeExperience: {
 }[] = [
   {
     id: 1,
-    companyName: 'MLH FELLOW (Armada OPEN SOURCE, REMOTE INTERNSHIP)',
-    year: 'May 2023 - Present',
-    position: 'FRONTEND WEB DEVELOPER',
-  },
-  {
-    id: 2,
     companyName: 'LECTIE (REMOTE)',
     year: 'Aug 2022 - Present',
     position: 'FRONTEND WEB DEVELOPER',
   },
+  {
+    id: 2,
+    companyName: 'MLH FELLOW (Armada OPEN SOURCE, REMOTE INTERNSHIP)',
+    year: 'May 2023 - Aug 2023',
+    position: 'FRONTEND WEB DEVELOPER',
+  },
+
   {
     id: 3,
     companyName: 'HNG (REMOTE INTERNSHIP)',

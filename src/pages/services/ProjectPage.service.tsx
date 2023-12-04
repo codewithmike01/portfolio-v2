@@ -28,6 +28,15 @@ export const ProjectData: {
     image: `${ShopifyAdmin}`,
     stack: ['Html', 'Css', 'Javascript'],
   },
+  {
+    id: 3,
+    description: `In recreating the Shopify admin website,
+      I've put a spotlight on user accessibility. My focus is on ensuring usability for everyone, encompassing keyboard and screen users for an engaging and inclusive web experience.`,
+    title: 'Lectie Studio',
+    viewLink: 'https://studio.lectie.com/',
+    image: `${ShopifyAdmin}`,
+    stack: ['Reactjs', 'Styled components'],
+  },
 ];
 
 // Project Details

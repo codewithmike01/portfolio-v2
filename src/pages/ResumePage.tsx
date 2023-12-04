@@ -66,31 +66,6 @@ const ResumePage: React.FC = () => {
           <section className="resume_details_container">
             {/* Main Content with bullet */}
 
-            {/* Education */}
-            <div className="resume_details_content_container">
-              <h3 className="resume_details_head">EDUCATION</h3>
-              <div>
-                {ResumeEducation.map(({ eduName, course, year, id, grade }) => (
-                  <div className="resume_details_wrapper" key={id}>
-                    <div className="resume_rule">
-                      <div className="circle"></div>
-                      <div className="rectangle"></div>
-                    </div>
-                    <div className="resume_details_wrapper_content">
-                      <div>
-                        <h4 className="resume_details_head_inner">{eduName}</h4>
-                        <p className="date">{year}</p>
-                      </div>
-                      <div>
-                        <p className="course">{course}</p>
-                        <p>{grade}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
             {/* Experience */}
             <div className="resume_details_content_container">
               <h3 className="resume_details_head">EXPERIENCE</h3>
@@ -110,6 +85,30 @@ const ResumePage: React.FC = () => {
                       </div>
                       <div>
                         <p className="course">{position}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Education */}
+            <div className="resume_details_content_container">
+              <h3 className="resume_details_head">EDUCATION</h3>
+              <div>
+                {ResumeEducation.map(({ eduName, course, year, id, grade }) => (
+                  <div className="resume_details_wrapper" key={id}>
+                    <div className="resume_rule">
+                      <div className="circle"></div>
+                      <div className="rectangle"></div>
+                    </div>
+                    <div className="resume_details_wrapper_content">
+                      <div>
+                        <h4 className="resume_details_head_inner">{eduName}</h4>
+                        <p className="date">{year}</p>
+                      </div>
+                      <div>
+                        <p className="course">{course}</p>
+                        <p>{grade}</p>
                       </div>
                     </div>
                   </div>
