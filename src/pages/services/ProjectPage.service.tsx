@@ -1,5 +1,6 @@
 import ItaronisProject from '../../assets/images/itaromis_project.png';
 import ShopifyAdmin from '../../assets/images/ShopifyAdmin.png';
+import LecticMotherSite from '../../assets/images/lectie-mother-site.png';
 
 // Project Card Data
 export const ProjectData: {
@@ -12,6 +13,15 @@ export const ProjectData: {
 }[] = [
   {
     id: 1,
+    description: `The official website for Lectie encompasses comprehensive information regarding a diverse range of Lectie products. This platform provides detailed descriptions of the products, elucidates the benefits of their utilization, and offers guidance on accessing the respective offerings.`,
+    title: `Lectie's primary website`,
+    viewLink: 'https://www.lectie.com/',
+    image: `${LecticMotherSite}`,
+    stack: ['Reactjs', 'Styled components', 'Redux Toolkit', 'Context Api'],
+  },
+
+  {
+    id: 2,
     description: `As the curator of this website, my aim is to spotlight the company's brand, products, and services on a global stage. With exclusive admin privileges, I orchestrate CRUD operations to dynamically populate the gallery and product page,
      ensuring a dynamic and compelling showcase.`,
     title: 'Itaronis Limited',
@@ -20,22 +30,13 @@ export const ProjectData: {
     stack: ['Reactjs', 'Typescript', 'Jest', 'Figma'],
   },
   {
-    id: 2,
+    id: 3,
     description: `In recreating the Shopify admin website,
     I've put a spotlight on user accessibility. My focus is on ensuring usability for everyone, encompassing keyboard and screen users for an engaging and inclusive web experience.`,
     title: 'Clone of Shopify Admin',
     viewLink: 'https://kanu-crushing-it-hackerton.vercel.app/',
     image: `${ShopifyAdmin}`,
     stack: ['Html', 'Css', 'Javascript'],
-  },
-  {
-    id: 3,
-    description: `In recreating the Shopify admin website,
-      I've put a spotlight on user accessibility. My focus is on ensuring usability for everyone, encompassing keyboard and screen users for an engaging and inclusive web experience.`,
-    title: 'Lectie Studio',
-    viewLink: 'https://studio.lectie.com/',
-    image: `${ShopifyAdmin}`,
-    stack: ['Reactjs', 'Styled components'],
   },
 ];
 
@@ -56,6 +57,31 @@ export const ProjectDetails: {
 }[] = [
   {
     id: 1,
+    description: `Lectie is a brand dedicated to incorporating socialization into its products, as it firmly believes that social interaction is a fundamental essence of human experience, fostering communication, networking, and fellowship.`,
+    title: `Lectie's primary website`,
+    viewLink: 'https://www.lectie.com/',
+    image: `${LecticMotherSite}`,
+    tools: ['Reactjs', 'Styled components', 'Redux Toolkit', 'Context Api'],
+    problem: `Highlighting products crafted by Lectie that promote socialization and providing an overview of the brand's core identity.`,
+    solution: `In presenting the Lectie brand, a prominently visible, user-centric, and engaging website has been developed to raise awareness of the brand and its products. The meticulous attention to detail ensures the site's maintainability and responsiveness.`,
+    challenges: `Achieving the desired aesthetics and user experience for the website posed a moderate challenge, requiring careful navigation to strike the right balance without overshadowing key information and ensuring a meaningful user interface.`,
+    presentFeatures: [
+      'Multilingual translation services are available, covering languages such as French, Portuguese, Spanish, and English.',
+      'Ensuring responsiveness across a variety of screen sizes.',
+    ],
+    futureFeatures: ['Enhanced user accessibility, interface and experience.'],
+    collaborators: [
+      {
+        id: 1,
+        start: 'Figma design By',
+        link: 'https://twitter.com/MavisBeee',
+        name: 'Mavis Nwaokorie',
+      },
+    ],
+  },
+
+  {
+    id: 2,
     description: `Itaronis Limited website is a for installation, maintainace, sales and supply of a solar renewable energy equipments.`,
     title: 'Itaronis Limited',
     viewLink: 'https://www.itaronisltd.com/',
@@ -93,9 +119,9 @@ export const ProjectDetails: {
   },
 
   {
-    id: 2,
+    id: 3,
     description: `Explore  Shopify Admin website—a dynamic hub for effortless business management. Our intuitive interface and powerful features empower you to oversee your store with precision. Streamline product management, order processing, and customer interactions seamlessly. Step into the future of e-commerce administration with our user-friendly platform, where efficiency meets innovation.`,
-    title: 'Clone of Shopify Admin',
+    title: '',
     viewLink: 'https://kanu-crushing-it-hackerton.vercel.app/',
     image: `${ShopifyAdmin}`,
     tools: ['Html', 'Css', 'Javascript', 'Figma'],

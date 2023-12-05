@@ -59,29 +59,6 @@ const ProjectDetailPage = () => {
                   </div>
                 </div>
 
-                <div className="project_detail_skill collabo">
-                  <h4>
-                    {' '}
-                    {collaborators.length > 1
-                      ? 'Collaborators:'
-                      : 'Collaborator:'}{' '}
-                  </h4>
-
-                  {collaborators.map(({ id, start, link, name }) => (
-                    <div className="collab_list sub_content" key={id}>
-                      <GiConfirmed /> <p>{start}</p>
-                      <a
-                        href={link}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="collab_link"
-                      >
-                        {name}
-                      </a>
-                    </div>
-                  ))}
-                </div>
-
                 <div className="project_detail_skill stmt_problem">
                   <h4>Statement of problem: </h4>
                   <p className="sub_content">{problem}</p>
@@ -115,6 +92,29 @@ const ProjectDetailPage = () => {
                       </div>
                     ))}
                   </div>
+                </div>
+
+                <div className="project_detail_skill collabo">
+                  <h4>
+                    {' '}
+                    {collaborators.length > 1
+                      ? 'Collaborators:'
+                      : 'Collaborator:'}{' '}
+                  </h4>
+
+                  {collaborators.map(({ id, start, link, name }) => (
+                    <div className="collab_list sub_content" key={id}>
+                      <GiConfirmed /> <p>{start}</p>
+                      <a
+                        href={link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="collab_link"
+                      >
+                        {name}
+                      </a>
+                    </div>
+                  ))}
                 </div>
 
                 <div className="project_detail_skill">
