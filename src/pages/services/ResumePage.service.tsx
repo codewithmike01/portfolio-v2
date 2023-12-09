@@ -64,7 +64,7 @@ export const ResumeExperience: {
 
   {
     id: 3,
-    companyName: 'HNG (REMOTE INTERNSHIP)',
+    companyName: 'HNG (REMOTE)',
     year: 'Sep 2022 - Nov 2022',
     position: 'FRONTEND WEB DEVELOPER',
   },
