@@ -54,9 +54,7 @@ const ContactMe = () => {
       </>
     );
   }
-  // const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-  //   event.preventDefault();
-  // };
+
   return (
     <>
       <HelmetHead
@@ -111,5 +109,3 @@ const ContactMe = () => {
 };
 
 export default ContactMe;
-// error
-// id="outlined-error"

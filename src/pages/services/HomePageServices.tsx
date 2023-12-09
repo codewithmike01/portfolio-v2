@@ -4,12 +4,10 @@ import jsSkill from '../../assets/images/jsSkill.svg';
 import reduxSkill from '../../assets/images/reduxSkill.svg';
 import jestSkill from '../../assets/images/jestSkill.svg';
 import html5Skill from '../../assets/images/html5Skill.svg';
-import bootstrapSkill from '../../assets/images/bootstrapSkill.svg';
 import css3Skill from '../../assets/images/css3Skill.svg';
 import gitSkill from '../../assets/images/gitSkill.svg';
-import photoshopSkill from '../../assets/images/photoshopSkill.svg';
 import githubSkill from '../../assets/images/githubSkill.svg';
-import postgresqlSkill from '../../assets/images/postgresqlSkill.svg';
+import typescriptSkill from '../../assets/images/typescript.svg';
 
 // Hobby Import
 import { FiMusic } from 'react-icons/fi';
@@ -70,48 +68,41 @@ export const skills: {
   },
   {
     id: 3,
+    skill: 'Typescript',
+    image: `${typescriptSkill}`,
+  },
+  {
+    id: 4,
     skill: 'Redux',
     image: `${reduxSkill}`,
   },
   {
-    id: 4,
+    id: 5,
     skill: 'Jest',
     image: `${jestSkill}`,
   },
+
   {
-    id: 5,
+    id: 6,
     skill: 'HTML',
     image: `${html5Skill}`,
   },
-  {
-    id: 6,
-    skill: 'bootstrap',
-    image: `${bootstrapSkill}`,
-  },
+
   {
     id: 7,
+    skill: 'css3',
+    image: `${css3Skill}`,
+  },
+
+  {
+    id: 8,
     skill: 'Git',
     image: `${gitSkill}`,
   },
   {
-    id: 8,
+    id: 9,
     skill: 'github',
     image: `${githubSkill}`,
-  },
-  {
-    id: 9,
-    skill: 'photoshop',
-    image: `${photoshopSkill}`,
-  },
-  {
-    id: 10,
-    skill: 'css3',
-    image: `${css3Skill}`,
-  },
-  {
-    id: 11,
-    skill: 'postgresql',
-    image: `${postgresqlSkill}`,
   },
 ];
 
@@ -128,17 +119,6 @@ export const testimonyData: {
 }[] = [
   {
     id: 1,
-    name: 'Ikegbunam Ijeoma',
-    image: `${IkegbunamIjeoma}`,
-    profession: 'Designer',
-    icon: <FaBehanceSquare />,
-    testify:
-      'I had the opportunity working with mike on a group project of 7 members, I notice he has a proven knowledge of web development and works well with a team.',
-    link: 'https://www.behance.net/ikegbunamijeoma/projects',
-  },
-
-  {
-    id: 2,
     name: 'Nuri Lacka',
     image: `${NuriLucka}`,
     profession: 'Developer',
@@ -149,7 +129,7 @@ export const testimonyData: {
   },
 
   {
-    id: 3,
+    id: 2,
     name: 'Benjamin Semah',
     image: `${BenjaminSemah}`,
     profession: 'Developer',
@@ -157,6 +137,16 @@ export const testimonyData: {
     testify:
       'Mike is commited to excel at whatever he does, especially web development.',
     link: 'https://github.com/BenjaminSemah',
+  },
+  {
+    id: 3,
+    name: 'Ikegbunam Ijeoma',
+    image: `${IkegbunamIjeoma}`,
+    profession: 'Designer',
+    icon: <FaBehanceSquare />,
+    testify:
+      'I had the opportunity working with mike on a group project of 7 members, I notice he has a proven knowledge of web development and works well with a team.',
+    link: 'https://www.behance.net/ikegbunamijeoma/projects',
   },
 
   {
