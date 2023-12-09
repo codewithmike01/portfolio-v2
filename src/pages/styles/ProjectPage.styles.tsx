@@ -48,7 +48,7 @@ export const ProjectPageContainer = styled.section`
   .project_card_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 2.3rem;
+    grid-row-gap: 3rem;
     grid-column-gap: 1.5rem;
   }
 

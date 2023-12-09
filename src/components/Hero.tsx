@@ -13,11 +13,18 @@ const Hero = () => {
           <span>HEY THERE 👋,</span>
           <span>I'M KANU MIKE CHIBUNDU</span>
         </h2>
-        <p data-testid="description">
-          A graduate of computer science, who has sold his soul to software
-          development. I have over 2 years experience as a Front-end developer,
-          in building scalable web solutions, by following development standards
-          , patterns and principles.
+        <p data-testid="description" className="description">
+          Dynamic mid-level frontend developer with expertise in HTML, CSS,
+          JavaScript and Reactjs, focused on creating outstanding user
+          experiences. Demonstrated success in translating design concepts into
+          efficient, responsive code and thriving in both independent and
+          collaborative team environments. Adept at overcoming challenges, I
+          deliver high-quality solutions that surpass expectations. In addition
+          to technical proficiency, I possess strong communication skills for
+          effective stakeholder interaction and clear articulation of complex
+          concepts. Committed to continuous learning, I stay updated on emerging
+          technologies, eager to contribute to innovative projects and enhance
+          digital experiences.
         </p>
       </div>
 

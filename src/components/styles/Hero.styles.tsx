@@ -39,12 +39,12 @@ export const HeroContainer = styled.section`
 
     p {
       align-self: center;
-      max-width: 680px;
-      line-height: 1.65rem;
+      text-align: justify;
+      max-width: 980px;
+      line-height: 2rem;
       letter-spacing: 1.5px;
       word-spacing: 1px;
       transform: scale(0);
-
       animation: scaleIn 1s ease-in-out forwards;
       transition: transform 1s ease-in-out;
 
