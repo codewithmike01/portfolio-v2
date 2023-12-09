@@ -38,8 +38,8 @@ const ResumePage: React.FC = () => {
             </div>
             <div className="download_wraper desktop">
               <a
-                href={require('../assets/doc/01_Mike_kanu_(Front_end_software_engineer).docx')}
-                download={'01_Kanu_Mike_Resume.docx'}
+                href={require('../assets/doc/01_Mike_kanu_(Front_end_software_engineer).pdf')}
+                download={'01_Mike_kanu_(Front_end_software_engineer).pdf'}
               >
                 <p>Download Resume</p>
                 <MdOutlineDownloading />
@@ -47,8 +47,8 @@ const ResumePage: React.FC = () => {
             </div>
             {/* Mobile download icon */}
             <a
-              href={require('../assets/doc/01_Mike_kanu_(Front_end_software_engineer).docx')}
-              download={'01_Kanu_Mike_Resume.docx'}
+              href={require('../assets/doc/01_Mike_kanu_(Front_end_software_engineer).pdf')}
+              download={'01_Mike_kanu_(Front_end_software_engineer).pdf'}
               className="download_mobile"
             >
               <AiOutlineDownload />
@@ -120,8 +120,8 @@ const ResumePage: React.FC = () => {
           <div className="download_btn_mobile">
             <div className="download_wraper">
               <a
-                href={require('../assets/doc/01_Mike_kanu_(Front_end_software_engineer).docx')}
-                download={'01_Kanu_Mike_Resume.docx'}
+                href={require('../assets/doc/01_Mike_kanu_(Front_end_software_engineer).pdf')}
+                download={'01_Mike_kanu_(Front_end_software_engineer).pdf'}
               >
                 <div className="btn_content">
                   <p>Download Resume</p> <MdOutlineDownloading />
