@@ -36,7 +36,7 @@ const ResumePage: React.FC = () => {
               <img src={Logo} alt="logo" />
               <h3>RCM</h3>
             </div>
-            <div className="download_wraper desktop">
+            {/* <div className="download_wraper desktop">
               <a
                 href={require('../assets/doc/01_Mike_kanu_(Front_end_software_engineer).pdf')}
                 download={'01_Mike_kanu_(Front_end_software_engineer).pdf'}
@@ -44,15 +44,15 @@ const ResumePage: React.FC = () => {
                 <p>Download Resume</p>
                 <MdOutlineDownloading />
               </a>
-            </div>
+            </div> */}
             {/* Mobile download icon */}
-            <a
+            {/* <a
               href={require('../assets/doc/01_Mike_kanu_(Front_end_software_engineer).pdf')}
               download={'01_Mike_kanu_(Front_end_software_engineer).pdf'}
               className="download_mobile"
             >
               <AiOutlineDownload />
-            </a>
+            </a> */}
           </div>
         </section>
 
@@ -117,7 +117,7 @@ const ResumePage: React.FC = () => {
             </div>
           </section>
 
-          <div className="download_btn_mobile">
+          {/* <div className="download_btn_mobile">
             <div className="download_wraper">
               <a
                 href={require('../assets/doc/01_Mike_kanu_(Front_end_software_engineer).pdf')}
@@ -128,7 +128,7 @@ const ResumePage: React.FC = () => {
                 </div>
               </a>
             </div>
-          </div>
+          </div> */}
         </section>
 
         <section className="certificate_container">

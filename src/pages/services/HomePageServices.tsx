@@ -8,6 +8,7 @@ import css3Skill from '../../assets/images/css3Skill.svg';
 import gitSkill from '../../assets/images/gitSkill.svg';
 import githubSkill from '../../assets/images/githubSkill.svg';
 import typescriptSkill from '../../assets/images/typescript.svg';
+import nodeJsSkil from '../../assets/images/nodejs.svg';
 
 // Hobby Import
 import { FiMusic } from 'react-icons/fi';
@@ -63,44 +64,50 @@ export const skills: {
   },
   {
     id: 2,
+    skill: 'NodeJs',
+    image: `${nodeJsSkil}`,
+  },
+  {
+    id: 3,
     skill: 'javascript',
     image: `${jsSkill}`,
   },
   {
-    id: 3,
+    id: 4,
     skill: 'Typescript',
     image: `${typescriptSkill}`,
   },
+
   {
-    id: 4,
+    id: 5,
     skill: 'Redux',
     image: `${reduxSkill}`,
   },
   {
-    id: 5,
+    id: 6,
     skill: 'Jest',
     image: `${jestSkill}`,
   },
 
   {
-    id: 6,
+    id: 7,
     skill: 'HTML',
     image: `${html5Skill}`,
   },
 
   {
-    id: 7,
+    id: 8,
     skill: 'css3',
     image: `${css3Skill}`,
   },
 
   {
-    id: 8,
+    id: 9,
     skill: 'Git',
     image: `${gitSkill}`,
   },
   {
-    id: 9,
+    id: 10,
     skill: 'github',
     image: `${githubSkill}`,
   },

@@ -63,7 +63,7 @@ export const HomePageContainer = styled.section`
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
         grid-row-gap: 2rem;
-        grid-column-gap: 2rem;
+        grid-column-gap: 3rem;
       }
     }
   }

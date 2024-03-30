@@ -2,6 +2,7 @@ import React from 'react';
 import BgButton from './BgButton';
 import { FiArrowUpRight } from 'react-icons/fi';
 import { HeroContainer } from './styles/Hero.styles';
+import { MdOutlineDownloading } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 import BorderButton from './BorderButton';
 
@@ -34,13 +35,13 @@ const Hero = () => {
         />
 
         <a
-          href={require('../assets/doc/01_Mike_kanu_(Front_end_software_engineer).pdf')}
-          download={'01_Mike_kanu_(Front_end_software_engineer).pdf'}
+          href={require('../assets/doc/01kanuMikeResume.docx')}
+          download={'01kanuMikeResume.docx'}
         >
           <BorderButton
             text="Download my Resume"
             width="12rem"
-            icon={<FiArrowUpRight />}
+            icon={<MdOutlineDownloading />}
             func={() => {}}
           />
         </a>
