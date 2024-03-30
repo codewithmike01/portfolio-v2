@@ -129,7 +129,7 @@ const ProjectDetailPage = () => {
               </section>
 
               <section className="project_details_btn_container">
-                <a
+                {/* <a
                   href="https://www.buymeacoffee.com/kanumikech0"
                   target="_blank"
                   className="buy_coffee"
@@ -138,7 +138,7 @@ const ProjectDetailPage = () => {
                   {' '}
                   <p>Buy me a coffee</p>
                   <SiBuymeacoffee />
-                </a>
+                </a> */}
                 <a
                   href={viewLink}
                   target="_blank"

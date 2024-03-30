@@ -61,6 +61,20 @@ export const HeroContainer = styled.section`
     }
   }
 
+  .btn-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: center;
+    gap: 1.5rem;
+    max-width: 500px;
+    width: 100%;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
   button {
     align-self: center;
     position: relative;

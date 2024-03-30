@@ -27,12 +27,12 @@ const NavBar: React.FC = () => {
             <NavLink to="/projects" style={handleActiveLink}>
               Projects
             </NavLink>
-            <NavLink to="/blog" style={handleActiveLink}>
+            {/* <NavLink to="/blog" style={handleActiveLink}>
               Blog
-            </NavLink>
-            <NavLink to="/resume" style={handleActiveLink}>
+            </NavLink> */}
+            {/* <NavLink to="/resume" style={handleActiveLink}>
               Resume
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/contact" style={handleActiveLink}>
               Contact Me
             </NavLink>

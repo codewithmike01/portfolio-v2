@@ -39,13 +39,13 @@ export const hobbies: {
   {
     id: 2,
     hobby: 'Cooking',
-    content: 'Cooking is like my second nature, i can never go wrong with it.',
+    content: 'I love cooking, and trying out new recipes and spices.',
     icon: <IoFastFood />,
   },
   {
     id: 3,
     hobby: 'Games',
-    content: 'I love playing indoor games like monopoly with friends.',
+    content: 'I love playing indoor games like monopoly and drafts',
     icon: <MdGamepad />,
   },
 ];
