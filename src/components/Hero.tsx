@@ -15,13 +15,13 @@ const Hero = () => {
           <span>I'M KANU MIKE CHIBUNDU</span>
         </h2>
         <p data-testid="description" className="description">
-          A frontend software engineer with expertise in JavaScript, Typescript,
-          Reactjs , NextJS, NodeJS, REST APIs etc, with an ambition to grow into
-          a more senior role in the next years, Previous companies benefited
-          from my abilities to follow clean code principles, translating design
-          concepts into efficient and responsive code and building accessible
-          and optimized web apps, thriving in both independent and collaborative
-          team environments.
+          A frontend software engineer with expertise in JavaScript, TypeScript,
+          React.js, Next.js, Node.js, REST APIs, etc., with an ambition to grow
+          into a more senior role in the next few years. Previous companies have
+          benefited from my abilities to follow clean code principles, translate
+          design concepts into efficient and responsive code, and build
+          accessible and optimized web apps. I thrive in both independent and
+          collaborative team environments.
         </p>
       </div>
 
