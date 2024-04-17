@@ -25,7 +25,7 @@ export const ProjectData: {
     description: `As the curator of this website, my aim is to spotlight the company's brand, products, and services on a global stage. With exclusive admin privileges, I orchestrate CRUD operations to dynamically populate the gallery and product page,
      ensuring a dynamic and compelling showcase.`,
     title: 'Itaronis Limited',
-    viewLink: 'https://www.itaronisltd.com/',
+    viewLink: 'https://itaroni-test-app.vercel.app/',
     image: `${ItaronisProject}`,
     stack: ['Reactjs', 'Typescript', 'Jest', 'Figma'],
   },
